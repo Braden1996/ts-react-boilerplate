@@ -1,7 +1,7 @@
 import * as styledComponents from 'styled-components';
 import { ThemedStyledProps } from 'styled-components';
 
-import { IThemeInterface } from './index.d';
+import { ITheme } from './index.d';
 
 const {
   default: styled,
@@ -10,10 +10,10 @@ const {
   keyframes,
   ThemeProvider
 } = styledComponents as styledComponents.ThemedStyledComponentsModule<
-  IThemeInterface
+  ITheme
 >;
 
-type MyThemedProps<P> = ThemedStyledProps<P, IThemeInterface>;
+type MyThemedProps<P> = ThemedStyledProps<P, ITheme>;
 
 export default styled;
 export { css, injectGlobal, keyframes, ThemeProvider, MyThemedProps };

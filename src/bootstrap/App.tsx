@@ -1,15 +1,15 @@
 import * as React from 'react';
 
-import {Button} from '@atoms/tags';
+import {Home} from '@pages';
 import {theme, ThemeProvider} from '@theme';
 
 class App extends React.Component {
   public render() {
-    return <>
+    return (
       <ThemeProvider theme={theme}>
-        <Button>Hello world!</Button>
+        <Home />
       </ThemeProvider>
-    </>
+    );
   }
 }
 

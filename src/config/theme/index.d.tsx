@@ -1,3 +1,51 @@
-export interface IThemeInterface {
-  primaryColor: string;
+export interface IThemeColors {
+  alizarin: string,
+  amber: string,
+  amethyst: string,
+  asbestos: string,
+  asphalt: string,
+  belize: string,
+  bloodOrange: string,
+  blue: string,
+  brand: {
+    twitter: string,
+    facebook: string
+  },
+  brown: string,
+  carrot: string,
+  clouds: string,
+  concrete: string,
+  cyan: string,
+  deepPurple: string,
+  dullOrange: string,
+  emerald: string,
+  green: string,
+  greenSea: string,
+  grey: string,
+  gunMetal: string,
+  indigo: string,
+  lightBlue: string,
+  lightGreen: string,
+  lime: string,
+  midnightBlue: string,
+  nephritis: string,
+  offWhite: string,
+  orange: string,
+  paper: string,
+  pink: string,
+  plum: string,
+  pomegranate: string,
+  pumpkin: string,
+  purple: string,
+  red: string,
+  river: string,
+  silver: string,
+  sunflower: string,
+  teal: string,
+  turqoise: string,
+  yellow: string,
+}
+
+export interface ITheme {
+  colors: IThemeColors
 }
