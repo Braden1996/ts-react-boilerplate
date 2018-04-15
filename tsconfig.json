@@ -27,7 +27,8 @@
       "@templates": ["components/templates/index.tsx"],
       "@templates/*": ["components/templates/*"],
       "@pages": ["components/pages/index.tsx"],
-      "@pages/*": ["components/pages/*"]
+      "@pages/*": ["components/pages/*"],
+      "@theme": ["config/theme/index.tsx"]
     }
   },
   "exclude": [

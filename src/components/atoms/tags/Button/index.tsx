@@ -1,7 +1,14 @@
-import * as React from 'react';
 
-interface IButtonProps {children: string}
+import styled, { css, MyThemedProps } from '@theme'
 
-export default function Button({children}: IButtonProps) {
-  return <button>{children}</button>;
+interface IButton {
+  disabled?: boolean;
 }
+
+export default styled.button`
+  background-color: ${p => p.theme.primaryColor};
+  ${(p: MyThemedProps<IButton>) => p.disabled ? css`
+    pointer-events: none;
+    opacity: 0.5;
+  ` : ''}
+`
