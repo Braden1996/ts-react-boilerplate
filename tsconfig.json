@@ -15,7 +15,20 @@
     "noImplicitAny": true,
     "strictNullChecks": true,
     "suppressImplicitAnyIndexErrors": true,
-    "noUnusedLocals": true
+    "noUnusedLocals": true,
+    "baseUrl": "src",
+    "paths": {
+      "@atoms": ["components/atoms/index.tsx"],
+      "@atoms/*": ["components/atoms/*"],
+      "@molecules": ["components/molecules/index.tsx"],
+      "@molecules/*": ["components/molecules/*"],
+      "@organisms": ["components/organisms/index.tsx"],
+      "@organisms/*": ["components/organisms/*"],
+      "@templates": ["components/templates/index.tsx"],
+      "@templates/*": ["components/templates/*"],
+      "@pages": ["components/pages/index.tsx"],
+      "@pages/*": ["components/pages/*"]
+    }
   },
   "exclude": [
     "node_modules",

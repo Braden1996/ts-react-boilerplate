@@ -1,9 +1,11 @@
 import * as React from 'react';
 
+import { Button } from '@atoms/tags'
+
 class App extends React.Component {
   public render() {
     return <>
-      <h1>Hello world!</h1>
+      <Button>Hello world!</Button>
     </>
   }
 }
