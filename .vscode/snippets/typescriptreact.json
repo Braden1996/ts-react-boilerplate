@@ -1,0 +1,15 @@
+{
+  "React Styled Component": {
+    "prefix": "styledcomponent",
+    "body": [
+      "import styled from 'styled-components'",
+      "",
+      "export default styled.${1:div}`",
+      "  ${p => p.theme}",
+      "`",
+      "$0"
+    ],
+    "description": "React Styled Component Skeleton"
+  }
+}
+
