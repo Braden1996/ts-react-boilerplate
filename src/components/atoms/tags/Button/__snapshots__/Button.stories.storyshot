@@ -1,6 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots atoms/tags/Button basic Button 1`] = `
+.c0 {
+  height: 32px;
+  background-color: #efefef;
+}
+
 <div
   style={
     Object {
@@ -23,14 +28,14 @@ exports[`Storyshots atoms/tags/Button basic Button 1`] = `
       }
     }
   >
-    <div
-      className="Button "
+    <button
+      className="c0"
+      disabled={false}
       onClick={[Function]}
+      size="medium"
     >
-      <span>
-        Poop
-      </span>
-    </div>
+      Click me
+    </button>
   </div>
 </div>
 `;

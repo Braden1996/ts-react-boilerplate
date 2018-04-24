@@ -1,12 +1,13 @@
-import styled, { css, MyThemedProps } from '@theme'
+import styled, { css } from '@theme'
 
-interface IH1 {
+interface IProps {
   glow?: boolean;
 }
 
 export default styled.h1`
-  color: ${p => p.theme.colors.midnightBlue};
-  ${(p: MyThemedProps<IH1>) => p.glow ? css`
-    text-shadow: 0 0 10px ${p.theme.colors.alizarin};
+  ${(p: IProps) => ''}
+  color: ${p => p.glow ? p.theme.colors.blue : p.theme.colors.red};
+  ${p => p.glow ? css`
+    text-shadow: 0 0 10px ${p.theme.colors.pink};
   ` : ''}
-`
+`;

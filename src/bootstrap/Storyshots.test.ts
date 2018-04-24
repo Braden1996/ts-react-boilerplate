@@ -3,8 +3,10 @@ import initStoryshots, {
   // @ts-ignore
 } from '@storybook/addon-storyshots';
 
-// @ts-ignore
-import * as styleSheetSerializer from 'jest-styled-components/src/styleSheetSerializer';
+
+import * as styleSheetSerializer
+  // @ts-ignore
+  from 'jest-styled-components/src/styleSheetSerializer';
 
 import { addSerializer } from 'jest-specific-snapshot'
 

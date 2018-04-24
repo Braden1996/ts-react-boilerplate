@@ -2,7 +2,7 @@
 
 exports[`Storyshots atoms/tags/H1 basic H1 1`] = `
 .c0 {
-  color: #2c3e50;
+  color: #f44336;
 }
 
 <div
@@ -38,8 +38,8 @@ exports[`Storyshots atoms/tags/H1 basic H1 1`] = `
 
 exports[`Storyshots atoms/tags/H1 emoji H1 1`] = `
 .c0 {
-  color: #2c3e50;
-  text-shadow: 0 0 10px #e74c3c;
+  color: #2196f3;
+  text-shadow: 0 0 10px #e91e63;
 }
 
 <div

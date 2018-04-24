@@ -13,11 +13,11 @@ const Wrapper = styled.div`
   }
 `;
 
-export interface IProps {
-  children: JSX.Element
+interface IProps {
+  children: JSX.Element;
 }
 
-export const GenericTemplate = (props: IProps) => (
+export const GenericTemplate = (props: Deep.Readonly<IProps>) => (
   <Wrapper>
     <Header />
     <main>{props.children}</main>

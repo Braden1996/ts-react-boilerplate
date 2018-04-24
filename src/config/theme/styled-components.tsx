@@ -1,5 +1,4 @@
 import * as styledComponents from 'styled-components';
-import { ThemedStyledProps } from 'styled-components';
 
 import { ITheme } from './index.d';
 
@@ -13,7 +12,11 @@ const {
   ITheme
 >;
 
-type MyThemedProps<P> = ThemedStyledProps<P, ITheme>;
+type MyThemedProps<P> =
+  styledComponents.ThemedStyledProps<P, Deep.Readonly<ITheme>>;
+
+export type StyledFunction<T> =
+  styledComponents.ThemedStyledFunction<T, ITheme>;
 
 export default styled;
 export { css, injectGlobal, keyframes, ThemeProvider, MyThemedProps };
