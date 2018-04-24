@@ -33,7 +33,12 @@
       "@pages": ["components/pages/index.tsx"],
       "@pages/*": ["components/pages/*"],
       "@theme": ["config/theme/index.tsx"]
-    }
+    },
+    "plugins": [
+      {
+        "name": "typescript-styled-plugin"
+      }
+    ]
   },
   "exclude": [
     "node_modules",

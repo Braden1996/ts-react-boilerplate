@@ -1,17 +1,14 @@
 import initStoryshots, {
   multiSnapshotWithOptions
-  // @ts-ignore
 } from '@storybook/addon-storyshots';
-
-
-import * as styleSheetSerializer
-  // @ts-ignore
-  from 'jest-styled-components/src/styleSheetSerializer';
-
+import { shallow } from 'enzyme';
 import { addSerializer } from 'jest-specific-snapshot'
+import * as styleSheetSerializer
+  from 'jest-styled-components/src/styleSheetSerializer';
 
 addSerializer(styleSheetSerializer);
 
 initStoryshots({
-  test: multiSnapshotWithOptions({})
+  renderer: shallow,
+  test: multiSnapshotWithOptions({}),
 });
