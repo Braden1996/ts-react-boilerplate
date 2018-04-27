@@ -1,13 +1,12 @@
-import styled, { css } from '@theme'
+import styled, { css, MyThemedProps as P } from '@theme'
 
 interface IProps {
   disabled?: boolean;
-  size?: 'small' | 'medium' | 'large';
+  size: 'small' | 'medium' | 'large';
 }
 
 const Button = styled.button`
-  ${(p: IProps) => ''}
-  height: ${p => {
+  height: ${(p: P<IProps>) => {
     switch (p.size) {
       case 'small':
         return 24;

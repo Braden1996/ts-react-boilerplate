@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux';
-import { getReturnOfExpression } from 'typesafe-actions';
+import { getReturnOfExpression, getType } from 'typesafe-actions';
 
 import * as actions from './actions';
 
@@ -22,6 +22,10 @@ export default combineReducers<State, Action>({
   },
   value: (state = [1, 2, 3], action) => {
     switch (action.type) {
+      case getType(actions.add):
+        return state.map(val => val + action.payload);
+      case getType(actions.increment):
+        return state.map(val => val + 1);
       default: {
         return state;
       }
