@@ -1,0 +1,316 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots atoms/tags/Button basic Button 1`] = `
+.c0 {
+  height: 32px;
+  background-color: #efefef;
+}
+
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": 0,
+      "display": "flex",
+      "justifyContent": "center",
+      "left": 0,
+      "overflow": "auto",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+      }
+    }
+  >
+    <button
+      className="c0"
+      disabled={false}
+      onClick={[Function]}
+      size="medium"
+    >
+      Click me
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots atoms/tags/H1 basic H1 1`] = `
+.c0 {
+  color: #f44336;
+}
+
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": 0,
+      "display": "flex",
+      "justifyContent": "center",
+      "left": 0,
+      "overflow": "auto",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+      }
+    }
+  >
+    <h1
+      className="c0"
+    >
+      Glowing
+    </h1>
+  </div>
+</div>
+`;
+
+exports[`Storyshots atoms/tags/H1 emoji H1 1`] = `
+.c0 {
+  color: #2196f3;
+  text-shadow: 0 0 10px #e91e63;
+}
+
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": 0,
+      "display": "flex",
+      "justifyContent": "center",
+      "left": 0,
+      "overflow": "auto",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+      }
+    }
+  >
+    <h1
+      className="c0"
+    >
+      💩🧠🎁🚀
+    </h1>
+  </div>
+</div>
+`;
+
+exports[`Storyshots organisms/Footer basic Footer 1`] = `
+.c0 {
+  width: 100%;
+  height: 128px;
+  background-color: #ff5722;
+}
+
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": 0,
+      "display": "flex",
+      "justifyContent": "center",
+      "left": 0,
+      "overflow": "auto",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "width": "100vw",
+        }
+      }
+    >
+      <footer
+        className="c0"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots organisms/Header basic Header 1`] = `
+.c0 {
+  width: 100%;
+  height: 256px;
+  background-color: #9b59b6;
+  border-bottom: 4px solid #673ab7;
+}
+
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": 0,
+      "display": "flex",
+      "justifyContent": "center",
+      "left": 0,
+      "overflow": "auto",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "width": "100vw",
+        }
+      }
+    >
+      <header
+        className="c0"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots pages/Home/Content basic HomeContent 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": 0,
+      "display": "flex",
+      "justifyContent": "center",
+      "left": 0,
+      "overflow": "auto",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+      }
+    }
+  >
+    <h1>
+      Hello world
+    </h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quisquam molestias esse numquam iure, amet porro quos vitae distinctio repellat ipsam laboriosam! Repellat saepe suscipit iste, non id quod quia?
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Storyshots templates/GenericTemplate basic GenericTemplate 1`] = `
+.c2 {
+  width: 100%;
+  height: 128px;
+  background-color: #ff5722;
+}
+
+.c1 {
+  width: 100%;
+  height: 256px;
+  background-color: #9b59b6;
+  border-bottom: 4px solid #673ab7;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.c0 > main {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": 0,
+      "display": "flex",
+      "justifyContent": "center",
+      "left": 0,
+      "overflow": "auto",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "width": "100vw",
+        }
+      }
+    >
+      <div
+        className="c0"
+      >
+        <header
+          className="c1"
+        />
+        <main>
+          <p>
+            Hello world!
+          </p>
+        </main>
+        <footer
+          className="c2"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
