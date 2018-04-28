@@ -1,7 +1,7 @@
 const path = require('path');
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 
-const jestAliases = require('./utils/jestAliases.js');
+const jestAliases = require('./internal/utils/jestAliases.js');
 const tsconfig = require('./tsconfig.json');
 
 module.exports = {
