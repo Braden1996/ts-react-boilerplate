@@ -3,6 +3,6 @@ import styled from '@theme'
 export default styled.header`
   width: 100%;
   height: 256px;
-  background-color: ${p => p.theme.colors.amethyst};
+  background-color: ${p => p.theme.colors.blue};
   border-bottom: 4px solid ${p => p.theme.colors.deepPurple};
 `
