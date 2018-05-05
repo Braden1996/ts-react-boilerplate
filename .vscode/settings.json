@@ -1,7 +1,7 @@
 {
     "files.trimTrailingWhitespace": true,
     "files.insertFinalNewline": true,
-
+    "jest.pathToJest": "npm test --",
     "editor.tabSize": 2,
     "typescript.tsdk": "node_modules/typescript/lib"
 }
