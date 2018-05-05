@@ -161,7 +161,7 @@ exports[`Storyshots organisms/Header basic Header 1`] = `
 .c0 {
   width: 100%;
   height: 256px;
-  background-color: #9b59b6;
+  background-color: #2196f3;
   border-bottom: 4px solid #673ab7;
 }
 
@@ -245,7 +245,7 @@ exports[`Storyshots templates/GenericTemplate basic GenericTemplate 1`] = `
 .c1 {
   width: 100%;
   height: 256px;
-  background-color: #9b59b6;
+  background-color: #2196f3;
   border-bottom: 4px solid #673ab7;
 }
 
