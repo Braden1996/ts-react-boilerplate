@@ -2,7 +2,7 @@ import styled, { css, MyThemedProps as P } from '@theme'
 
 interface IProps {
   disabled?: boolean;
-  size: 'small' | 'medium' | 'large';
+  size?: 'small' | 'medium' | 'large';
 }
 
 const Button = styled.button`
@@ -26,7 +26,7 @@ const Button = styled.button`
 
 Button.defaultProps = {
   disabled: false,
-  size: 'medium',
-};
+  size: 'small',
+};;
 
 export default Button;
