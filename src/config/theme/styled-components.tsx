@@ -1,9 +1,10 @@
 import * as styledComponents from 'styled-components';
 
-import { ITheme } from './index.d';
+import { theme } from './index';
 
+type themeType = Deep.Readonly<typeof theme>;
 type MyThemedProps<P> =
-  styledComponents.ThemedStyledProps<Deep.Readonly<P>, Deep.Readonly<ITheme>>;
+  styledComponents.ThemedStyledProps<Deep.Readonly<P>, themeType>;
 
 const {
   default: styled,
@@ -12,7 +13,7 @@ const {
   keyframes,
   ThemeProvider
 } = styledComponents as styledComponents.ThemedStyledComponentsModule<
-  ITheme
+  themeType
 >;
 
 export default styled;

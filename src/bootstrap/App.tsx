@@ -1,17 +1,17 @@
 import { History } from 'history';
 import * as React from 'react';
 import { Provider } from 'react-redux';
-import { Route } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import { ConnectedRouter } from 'react-router-redux';
 import { Store } from 'redux';
 
-import {Home} from '@pages';
+import { Calendar, Home } from '@pages';
 import {theme as theTheme, ThemeProvider} from '@theme';
 
 interface IProps {
   store: Store<any>;
   history: History;
-  theme: typeof theTheme
+  theme: typeof theTheme;
 }
 
 export default class App extends React.Component<IProps, {}> {
@@ -21,11 +21,18 @@ export default class App extends React.Component<IProps, {}> {
       <Provider store={store}>
         <ThemeProvider theme={theme}>
           <ConnectedRouter history={history}>
-            <Route
-              exact={true}
-              path="/"
-              component={Home}
-            />
+            <Switch>
+              <Route
+                exact
+                path="/(dashboard)?"
+                component={Home}
+              />
+              <Route
+                exact
+                path="/calendar"
+                component={Calendar}
+              />
+            </Switch>
           </ConnectedRouter>
         </ThemeProvider>
       </Provider>

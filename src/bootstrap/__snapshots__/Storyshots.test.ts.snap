@@ -117,7 +117,7 @@ exports[`Storyshots organisms/Footer basic Footer 1`] = `
 .c0 {
   width: 100%;
   height: 128px;
-  background-color: #ff5722;
+  background-color: #34495e;
 }
 
 <div
@@ -160,9 +160,9 @@ exports[`Storyshots organisms/Footer basic Footer 1`] = `
 exports[`Storyshots organisms/Header basic Header 1`] = `
 .c0 {
   width: 100%;
-  height: 256px;
-  background-color: #2196f3;
-  border-bottom: 4px solid #673ab7;
+  height: 72px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #bdc3c7;
 }
 
 <div
@@ -202,7 +202,11 @@ exports[`Storyshots organisms/Header basic Header 1`] = `
 </div>
 `;
 
-exports[`Storyshots pages/Home/Content basic HomeContent 1`] = `
+exports[`Storyshots organisms/Logo basic Logo 1`] = `
+.c0 {
+  background-color: #34495e;
+}
+
 <div
   style={
     Object {
@@ -225,9 +229,904 @@ exports[`Storyshots pages/Home/Content basic HomeContent 1`] = `
       }
     }
   >
-    <h1>
+    <div
+      style={
+        Object {
+          "height": "100vh",
+          "width": "100vw",
+        }
+      }
+    >
+      <div
+        className="c0"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots organisms/Sidebar basic Sidebar 1`] = `
+.c2 {
+  padding-left: 20px;
+  color: rgba(255,255,255,0.2);
+}
+
+.c3 {
+  height: 52px;
+  padding-left: 20px;
+  color: rgba(255,255,255,0.6);
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.c3:hover {
+  background-color: rgba(0,0,0,0.2);
+  color: #ffffff;
+}
+
+.c3.active {
+  color: #34495e;
+  background-color: #efefef;
+  padding-left: 18px;
+  border-left: 2px solid #ffc107;
+}
+
+.c3,
+.c3 > a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c3 > svg:first-child,
+.c3 > a > svg:first-child {
+  margin-right: 12px;
+}
+
+.c0 {
+  width: 220px;
+  height: 100%;
+  padding-top: 20px;
+  padding-bottom: 4px;
+  background-color: #34495e;
+}
+
+.c0 > .c1 {
+  margin-bottom: 8px;
+}
+
+.c0 > ul > li {
+  margin-bottom: 4px;
+}
+
+.c0 > ul > li:last-of-type {
+  margin-bottom: 0;
+}
+
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": 0,
+      "display": "flex",
+      "justifyContent": "center",
+      "left": 0,
+      "overflow": "auto",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "height": "100vh",
+        }
+      }
+    >
+      <nav
+        className="c0"
+      >
+        <h1
+          className="c1 c2"
+        >
+          App
+        </h1>
+        <ul>
+          <li>
+            <a
+              aria-current="true"
+              className="c3 active"
+              href="/dashboard"
+              onClick={[Function]}
+              style={Object {}}
+            >
+              <svg
+                fill="currentColor"
+                height="1em"
+                preserveAspectRatio="xMidYMid meet"
+                style={
+                  Object {
+                    "color": undefined,
+                    "verticalAlign": "middle",
+                  }
+                }
+                viewBox="0 0 40 40"
+                width="1em"
+              >
+                <g>
+                  <path
+                    d="m21.6 5h13.4v10h-13.4v-10z m0 30v-16.6h13.4v16.6h-13.4z m-16.6 0v-10h13.4v10h-13.4z m0-13.4v-16.6h13.4v16.6h-13.4z"
+                  />
+                </g>
+              </svg>
+              Dashboard
+            </a>
+          </li>
+          <li>
+            <a
+              aria-current={false}
+              className="c3"
+              href="/calendar"
+              onClick={[Function]}
+              style={undefined}
+            >
+              <svg
+                fill="currentColor"
+                height="1em"
+                preserveAspectRatio="xMidYMid meet"
+                style={
+                  Object {
+                    "color": undefined,
+                    "verticalAlign": "middle",
+                  }
+                }
+                viewBox="0 0 40 40"
+                width="1em"
+              >
+                <g>
+                  <path
+                    d="m4.4 37.1h31.4v-22.8h-31.4v22.8z m8.5-27.1v-6.4q0-0.3-0.2-0.5t-0.5-0.2h-1.4q-0.3 0-0.5 0.2t-0.2 0.5v6.4q0 0.3 0.2 0.5t0.5 0.2h1.4q0.3 0 0.5-0.2t0.2-0.5z m17.2 0v-6.4q0-0.3-0.2-0.5t-0.5-0.2h-1.5q-0.3 0-0.5 0.2t-0.2 0.5v6.4q0 0.3 0.2 0.5t0.5 0.2h1.5q0.3 0 0.5-0.2t0.2-0.5z m8.5-1.4v28.5q0 1.2-0.8 2.1t-2 0.8h-31.4q-1.2 0-2.1-0.9t-0.8-2v-28.5q0-1.2 0.8-2t2.1-0.9h2.8v-2.1q0-1.5 1.1-2.6t2.5-1h1.4q1.5 0 2.5 1.1t1.1 2.5v2.1h8.6v-2.1q0-1.5 1-2.6t2.5-1h1.5q1.4 0 2.5 1.1t1 2.5v2.1h2.9q1.1 0 2 0.9t0.8 2z"
+                  />
+                </g>
+              </svg>
+              Calendar
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots organisms/Sidebar/MenuHeader basic MenuHeader 1`] = `
+.c1 {
+  padding-left: 20px;
+  color: rgba(255,255,255,0.2);
+}
+
+.javIOE > .c0 {
+  margin-bottom: 8px;
+}
+
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": 0,
+      "display": "flex",
+      "justifyContent": "center",
+      "left": 0,
+      "overflow": "auto",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+      }
+    }
+  >
+    <h1
+      className="c0 c1"
+    >
+      Menu
+    </h1>
+  </div>
+</div>
+`;
+
+exports[`Storyshots organisms/Sidebar/MenuItem basic MenuItem 1`] = `
+.c0 {
+  height: 52px;
+  padding-left: 20px;
+  color: rgba(255,255,255,0.6);
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.c0:hover {
+  background-color: rgba(0,0,0,0.2);
+  color: #ffffff;
+}
+
+.c0.active {
+  color: #34495e;
+  background-color: #efefef;
+  padding-left: 18px;
+  border-left: 2px solid #ffc107;
+}
+
+.c0,
+.c0 > a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 > svg:first-child,
+.c0 > a > svg:first-child {
+  margin-right: 12px;
+}
+
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": 0,
+      "display": "flex",
+      "justifyContent": "center",
+      "left": 0,
+      "overflow": "auto",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "width": "200px",
+        }
+      }
+    >
+      <a
+        aria-current={false}
+        className="c0"
+        href="/hello-world"
+        onClick={[Function]}
+        style={undefined}
+      >
+        Hello world!
+      </a>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots organisms/Sidebar/MenuItem basic svg MenuItem 1`] = `
+.c0 {
+  height: 52px;
+  padding-left: 20px;
+  color: rgba(255,255,255,0.6);
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.c0:hover {
+  background-color: rgba(0,0,0,0.2);
+  color: #ffffff;
+}
+
+.c0.active {
+  color: #34495e;
+  background-color: #efefef;
+  padding-left: 18px;
+  border-left: 2px solid #ffc107;
+}
+
+.c0,
+.c0 > a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 > svg:first-child,
+.c0 > a > svg:first-child {
+  margin-right: 12px;
+}
+
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": 0,
+      "display": "flex",
+      "justifyContent": "center",
+      "left": 0,
+      "overflow": "auto",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "width": "200px",
+        }
+      }
+    >
+      <a
+        aria-current={false}
+        className="c0"
+        href="/hello-world"
+        onClick={[Function]}
+        style={undefined}
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          preserveAspectRatio="xMidYMid meet"
+          style={
+            Object {
+              "color": undefined,
+              "verticalAlign": "middle",
+            }
+          }
+          viewBox="0 0 40 40"
+          width="1em"
+        >
+          <g>
+            <path
+              d="m30 15c2.7 0 5 2.3 5 5v2.6c0 1.8-1.5 3.3-3.3 3.3-0.8 0-1.6-0.4-2.2-1l-3.6-3.6-3.6 3.6c-1.3 1.3-3.4 1.3-4.6 0l-3.6-3.6-3.6 3.6c-0.6 0.6-1.4 1-2.2 1-1.8 0-3.3-1.5-3.3-3.3v-2.6c0-2.7 2.3-5 5-5h8.4v-3.4h3.2v3.4h8.4z m-2.3 11.6c1.1 1.1 2.5 1.8 4 1.8 1.3 0 2.4-0.4 3.3-1.1v7.7c0 0.9-0.7 1.6-1.6 1.6h-26.8c-0.9 0-1.6-0.7-1.6-1.6v-7.7c0.9 0.7 2 1.1 3.3 1.1 1.5 0 3-0.7 4-1.8l1.8-1.8 1.8 1.8c2.2 2.2 6 2.2 8.2 0l1.8-1.8z m-7.7-16.6c-1.8 0-3.4-1.6-3.4-3.4 0-0.6 0.3-1.2 0.6-1.7l2.8-4.9 2.8 4.9c0.3 0.5 0.6 1.1 0.6 1.7 0 1.8-1.5 3.4-3.4 3.4z"
+            />
+          </g>
+        </svg>
+        Hello world!
+      </a>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots organisms/Sidebar/MenuItem multiple MenuItem 1`] = `
+.c0 {
+  height: 52px;
+  padding-left: 20px;
+  color: rgba(255,255,255,0.6);
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.c0:hover {
+  background-color: rgba(0,0,0,0.2);
+  color: #ffffff;
+}
+
+.c0.active {
+  color: #34495e;
+  background-color: #efefef;
+  padding-left: 18px;
+  border-left: 2px solid #ffc107;
+}
+
+.c0,
+.c0 > a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 > svg:first-child,
+.c0 > a > svg:first-child {
+  margin-right: 12px;
+}
+
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": 0,
+      "display": "flex",
+      "justifyContent": "center",
+      "left": 0,
+      "overflow": "auto",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "width": "200px",
+        }
+      }
+    >
+      <ul>
+        <a
+          aria-current={false}
+          className="c0"
+          href="/Apple"
+          onClick={[Function]}
+          style={undefined}
+        >
+          Apple
+          !
+        </a>
+        <a
+          aria-current={false}
+          className="c0"
+          href="/Banana"
+          onClick={[Function]}
+          style={undefined}
+        >
+          Banana
+          !
+        </a>
+        <a
+          aria-current={false}
+          className="c0"
+          href="/Cherry"
+          onClick={[Function]}
+          style={undefined}
+        >
+          Cherry
+          !
+        </a>
+      </ul>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots pages/Calendar basic Content 1`] = `
+.c0 {
+  color: #f44336;
+}
+
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": 0,
+      "display": "flex",
+      "justifyContent": "center",
+      "left": 0,
+      "overflow": "auto",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+      }
+    }
+  >
+    <h1
+      className="c0"
+    >
+      Calendar
+    </h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Storyshots pages/Home basic Content 1`] = `
+.c1 {
+  height: 24px;
+  background-color: #efefef;
+}
+
+.c0 {
+  color: #f44336;
+}
+
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": 0,
+      "display": "flex",
+      "justifyContent": "center",
+      "left": 0,
+      "overflow": "auto",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+      }
+    }
+  >
+    <h1
+      className="c0"
+    >
       Hello world
     </h1>
+    <button
+      className="c1"
+      disabled={false}
+      size="small"
+    >
+      Hello
+    </button>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quisquam molestias esse numquam iure, amet porro quos vitae distinctio repellat ipsam laboriosam! Repellat saepe suscipit iste, non id quod quia?
     </p>
@@ -235,35 +1134,115 @@ exports[`Storyshots pages/Home/Content basic HomeContent 1`] = `
 </div>
 `;
 
-exports[`Storyshots templates/GenericTemplate basic GenericTemplate 1`] = `
-.c2 {
+exports[`Storyshots templates/GenericPage basic GenericPage 1`] = `
+.c11 {
   width: 100%;
   height: 128px;
-  background-color: #ff5722;
+  background-color: #34495e;
 }
 
-.c1 {
+.c4 {
   width: 100%;
-  height: 256px;
-  background-color: #2196f3;
-  border-bottom: 4px solid #673ab7;
+  height: 72px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #bdc3c7;
 }
 
-.c0 {
+.c2 {
+  background-color: #34495e;
+}
+
+.c8 {
+  padding-left: 20px;
+  color: rgba(255,255,255,0.2);
+}
+
+.c9 {
+  height: 52px;
+  padding-left: 20px;
+  color: rgba(255,255,255,0.6);
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.c9:hover {
+  background-color: rgba(0,0,0,0.2);
+  color: #ffffff;
+}
+
+.c9.active {
+  color: #34495e;
+  background-color: #efefef;
+  padding-left: 18px;
+  border-left: 2px solid #ffc107;
+}
+
+.c9,
+.c9 > a {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  min-height: 100vh;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
-.c0 > main {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
+.c9 > svg:first-child,
+.c9 > a > svg:first-child {
+  margin-right: 12px;
+}
+
+.c6 {
+  width: 220px;
+  height: 100%;
+  padding-top: 20px;
+  padding-bottom: 4px;
+  background-color: #34495e;
+}
+
+.c6 > .c7 {
+  margin-bottom: 8px;
+}
+
+.c6 > ul > li {
+  margin-bottom: 4px;
+}
+
+.c6 > ul > li:last-of-type {
+  margin-bottom: 0;
+}
+
+.c0 {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  grid-template-rows: max-content 1fr max-content;
+  grid-template-areas: "logo header" "sidebar content" "footer content";
+  min-height: 100vh;
+  max-height: 100vh;
+}
+
+.c0 > * {
+  grid-area: content;
+}
+
+.c0 > .c1 {
+  grid-area: logo;
+}
+
+.c0 > .c3 {
+  grid-area: header;
+}
+
+.c0 > .c5 {
+  grid-area: sidebar;
+}
+
+.c0 > .c10 {
+  grid-area: footer;
 }
 
 <div
@@ -298,17 +1277,156 @@ exports[`Storyshots templates/GenericTemplate basic GenericTemplate 1`] = `
       <div
         className="c0"
       >
-        <header
-          className="c1"
+        <div
+          className="c1 c2"
         />
-        <main>
+        <header
+          className="c3 c4"
+        />
+        <nav
+          className="c5 c6"
+        >
+          <h1
+            className="c7 c8"
+          >
+            App
+          </h1>
+          <ul>
+            <li>
+              <a
+                aria-current="true"
+                className="c9 active"
+                href="/dashboard"
+                onClick={[Function]}
+                style={Object {}}
+              >
+                <svg
+                  fill="currentColor"
+                  height="1em"
+                  preserveAspectRatio="xMidYMid meet"
+                  style={
+                    Object {
+                      "color": undefined,
+                      "verticalAlign": "middle",
+                    }
+                  }
+                  viewBox="0 0 40 40"
+                  width="1em"
+                >
+                  <g>
+                    <path
+                      d="m21.6 5h13.4v10h-13.4v-10z m0 30v-16.6h13.4v16.6h-13.4z m-16.6 0v-10h13.4v10h-13.4z m0-13.4v-16.6h13.4v16.6h-13.4z"
+                    />
+                  </g>
+                </svg>
+                Dashboard
+              </a>
+            </li>
+            <li>
+              <a
+                aria-current={false}
+                className="c9"
+                href="/calendar"
+                onClick={[Function]}
+                style={undefined}
+              >
+                <svg
+                  fill="currentColor"
+                  height="1em"
+                  preserveAspectRatio="xMidYMid meet"
+                  style={
+                    Object {
+                      "color": undefined,
+                      "verticalAlign": "middle",
+                    }
+                  }
+                  viewBox="0 0 40 40"
+                  width="1em"
+                >
+                  <g>
+                    <path
+                      d="m4.4 37.1h31.4v-22.8h-31.4v22.8z m8.5-27.1v-6.4q0-0.3-0.2-0.5t-0.5-0.2h-1.4q-0.3 0-0.5 0.2t-0.2 0.5v6.4q0 0.3 0.2 0.5t0.5 0.2h1.4q0.3 0 0.5-0.2t0.2-0.5z m17.2 0v-6.4q0-0.3-0.2-0.5t-0.5-0.2h-1.5q-0.3 0-0.5 0.2t-0.2 0.5v6.4q0 0.3 0.2 0.5t0.5 0.2h1.5q0.3 0 0.5-0.2t0.2-0.5z m8.5-1.4v28.5q0 1.2-0.8 2.1t-2 0.8h-31.4q-1.2 0-2.1-0.9t-0.8-2v-28.5q0-1.2 0.8-2t2.1-0.9h2.8v-2.1q0-1.5 1.1-2.6t2.5-1h1.4q1.5 0 2.5 1.1t1.1 2.5v2.1h8.6v-2.1q0-1.5 1-2.6t2.5-1h1.5q1.4 0 2.5 1.1t1 2.5v2.1h2.9q1.1 0 2 0.9t0.8 2z"
+                    />
+                  </g>
+                </svg>
+                Calendar
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <p>
+          Hello world!
+        </p>
+        <footer
+          className="c10 c11"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots templates/GenericPageContent basic GenericPageContent 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-y: hidden;
+  background-color: #efefef;
+}
+
+.c1 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  overflow-y: scroll;
+  margin: 32px;
+  border: 12px solid #ffffff;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": 0,
+      "display": "flex",
+      "justifyContent": "center",
+      "left": 0,
+      "overflow": "auto",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "height": "100vh",
+          "width": "100vw",
+        }
+      }
+    >
+      <div
+        className="c0"
+      >
+        <main
+          className="c1"
+        >
           <p>
             Hello world!
           </p>
         </main>
-        <footer
-          className="c2"
-        />
       </div>
     </div>
   </div>

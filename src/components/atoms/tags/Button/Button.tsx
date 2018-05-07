@@ -1,4 +1,4 @@
-import styled, { css, MyThemedProps as P } from '@theme'
+import styled, { css, MyThemedProps as P } from '@theme';
 
 interface IProps {
   disabled?: boolean;
@@ -27,6 +27,6 @@ const Button = styled.button`
 Button.defaultProps = {
   disabled: false,
   size: 'small',
-};;
+};
 
 export default Button;

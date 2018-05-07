@@ -2,12 +2,14 @@ import * as storybook from '@storybook/react';
 import { checkA11y } from '@storybook/addon-a11y';
 import centered from '@storybook/addon-centered';
 import { withKnobs } from '@storybook/addon-knobs/react';
+import StoryRouter from 'storybook-react-router';
 
 import initExtensions from './extensions';
 
 storybook.addDecorator(checkA11y);
 storybook.addDecorator(centered);
 storybook.addDecorator(withKnobs);
+storybook.addDecorator(StoryRouter());
 
 initExtensions(storybook);
 

@@ -1,4 +1,4 @@
-import styled, { css, MyThemedProps as P } from '@theme'
+import styled, { css, MyThemedProps as P } from '@theme';
 
 interface IProps {
   glow?: boolean;

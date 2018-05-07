@@ -1,7 +1,19 @@
-import { ITheme } from './index.d';
+const gridMultiple = (multiplier: number) => multiplier * 4;
 
-export const theme: ITheme  = {
+export const theme  = {
+  dimensions: {
+    mult: gridMultiple,
+    tiny: gridMultiple(1),
+    small: gridMultiple(2),
+    medium: gridMultiple(3),
+    large: gridMultiple(5),
+    huge: gridMultiple(8),
+    borderRadius: gridMultiple(1)
+  },
   colors: {
+    white: '#ffffff',
+    black: '#000000',
+    wetAsphalt: '#34495e',
     alizarin: '#e74c3c',
     amber: '#ffc107',
     amethyst: '#9b59b6',

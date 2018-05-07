@@ -10,4 +10,4 @@ storiesOf('atoms/tags/H1', module)
   ))
   .add('emoji H1', () => (
     <H1 glow={boolean('Glow', true)}>💩🧠🎁🚀</H1>
-  ))
+  ));

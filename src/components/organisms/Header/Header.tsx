@@ -1,8 +1,8 @@
-import styled from '@theme'
+import styled from '@theme';
 
 export default styled.header`
   width: 100%;
-  height: 256px;
-  background-color: ${p => p.theme.colors.blue};
-  border-bottom: 4px solid ${p => p.theme.colors.deepPurple};
-`
+  height: ${p => p.theme.dimensions.mult(18)}px;
+  background-color: ${p => p.theme.colors.white};
+  border-bottom: 1px solid ${p => p.theme.colors.silver};
+`;

@@ -1,8 +1,5 @@
 import styled from '@theme';
 
-export default styled.footer`
-  width: 100%;
-  height: 128px;
+export default styled.div`
   background-color: ${p => p.theme.colors.wetAsphalt};
 `;
-

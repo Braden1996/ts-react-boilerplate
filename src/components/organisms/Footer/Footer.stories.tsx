@@ -7,4 +7,4 @@ import Footer from './Footer';
 
 storiesOf('organisms/Footer', module)
   .addDecorator(styles({width: '100vw'}))
-  .add('basic Footer', () => <Footer />)
+  .add('basic Footer', () => <Footer />);

@@ -1,5 +1,5 @@
-import createHistory from 'history/createBrowserHistory'
-import { routerMiddleware as createRouterMiddleware } from 'react-router-redux'
+import createHistory from 'history/createBrowserHistory';
+import { routerMiddleware as createRouterMiddleware } from 'react-router-redux';
 import { applyMiddleware, compose, createStore } from 'redux';
 
 import { IRootState, rootReducer } from './root-reducer';

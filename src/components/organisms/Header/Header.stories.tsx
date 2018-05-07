@@ -7,4 +7,4 @@ import Header from './Header';
 
 storiesOf('organisms/Header', module)
   .addDecorator(styles({width: '100vw'}))
-  .add('basic Header', () => <Header />)
+  .add('basic Header', () => <Header />);

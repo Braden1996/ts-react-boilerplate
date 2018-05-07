@@ -12,4 +12,4 @@ storiesOf('atoms/tags/Button', module)
       disabled={boolean('Disabled', false)}
       onClick={action('button-clicked')}
     >Click me</Button>
-  ))
+  ));
