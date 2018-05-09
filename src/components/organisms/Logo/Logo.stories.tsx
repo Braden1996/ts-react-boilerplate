@@ -1,10 +1,14 @@
-// @ts-ignore
-import styles from "@sambego/storybook-styles";
 import { storiesOf } from '@storybook/react';
 import * as React from 'react';
 
-import Logo from './Logo';
+import styled from '@theme';
+
+import UnstyledLogo from './Logo';
+
+const Logo = styled(UnstyledLogo)`
+  width: 220px;
+  height: 73px;
+`;
 
 storiesOf('organisms/Logo', module)
-  .addDecorator(styles({width: '100vw', height: '100vh'}))
   .add('basic Logo', () => <Logo />);

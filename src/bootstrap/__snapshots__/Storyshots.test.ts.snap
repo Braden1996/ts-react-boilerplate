@@ -160,9 +160,13 @@ exports[`Storyshots organisms/Footer basic Footer 1`] = `
 exports[`Storyshots organisms/Header basic Header 1`] = `
 .c0 {
   width: 100%;
-  height: 72px;
   background-color: #ffffff;
   border-bottom: 1px solid #bdc3c7;
+}
+
+.c0 > .c1 {
+  width: 72px;
+  height: 72px;
 }
 
 <div
@@ -196,15 +200,106 @@ exports[`Storyshots organisms/Header basic Header 1`] = `
     >
       <header
         className="c0"
-      />
+      >
+        <button
+          className="c1 "
+          onClick={[Function]}
+        >
+          <svg
+            fill="currentColor"
+            height={32}
+            preserveAspectRatio="xMidYMid meet"
+            style={
+              Object {
+                "color": undefined,
+                "verticalAlign": "middle",
+              }
+            }
+            viewBox="0 0 40 40"
+            width={32}
+          >
+            <g>
+              <path
+                d="m5 10h30v3.4h-30v-3.4z m0 11.6v-3.2h30v3.2h-30z m0 8.4v-3.4h30v3.4h-30z"
+              />
+            </g>
+          </svg>
+        </button>
+      </header>
     </div>
   </div>
 </div>
 `;
 
-exports[`Storyshots organisms/Logo basic Logo 1`] = `
+exports[`Storyshots organisms/Header/IconButton basic IconButton 1`] = `
+.fwulYJ > .c1 {
+  width: 72px;
+  height: 72px;
+}
+
 .c0 {
+  width: 64px;
+  height: 64px;
+}
+
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": 0,
+      "display": "flex",
+      "justifyContent": "center",
+      "left": 0,
+      "overflow": "auto",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+      }
+    }
+  >
+    <button
+      className="c0 c1 "
+      onClick={[Function]}
+    >
+      <svg
+        fill="currentColor"
+        height={32}
+        preserveAspectRatio="xMidYMid meet"
+        style={
+          Object {
+            "color": undefined,
+            "verticalAlign": "middle",
+          }
+        }
+        viewBox="0 0 40 40"
+        width={32}
+      >
+        <g>
+          <path
+            d="m21.6 5h13.4v10h-13.4v-10z m0 30v-16.6h13.4v16.6h-13.4z m-16.6 0v-10h13.4v10h-13.4z m0-13.4v-16.6h13.4v16.6h-13.4z"
+          />
+        </g>
+      </svg>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots organisms/Logo basic Logo 1`] = `
+.c1 {
   background-color: #34495e;
+}
+
+.c0 {
+  width: 220px;
+  height: 73px;
 }
 
 <div
@@ -230,28 +325,19 @@ exports[`Storyshots organisms/Logo basic Logo 1`] = `
     }
   >
     <div
-      style={
-        Object {
-          "height": "100vh",
-          "width": "100vw",
-        }
-      }
-    >
-      <div
-        className="c0"
-      />
-    </div>
+      className="c0 c1"
+    />
   </div>
 </div>
 `;
 
 exports[`Storyshots organisms/Sidebar basic Sidebar 1`] = `
-.c2 {
+.c3 {
   padding-left: 20px;
   color: rgba(255,255,255,0.2);
 }
 
-.c3 {
+.c4 {
   height: 52px;
   padding-left: 20px;
   color: rgba(255,255,255,0.6);
@@ -261,20 +347,20 @@ exports[`Storyshots organisms/Sidebar basic Sidebar 1`] = `
   cursor: pointer;
 }
 
-.c3:hover {
+.c4:hover {
   background-color: rgba(0,0,0,0.2);
   color: #ffffff;
 }
 
-.c3.active {
+.c4.active {
   color: #34495e;
   background-color: #efefef;
   padding-left: 18px;
   border-left: 2px solid #ffc107;
 }
 
-.c3,
-.c3 > a {
+.c4,
+.c4 > a {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -285,29 +371,32 @@ exports[`Storyshots organisms/Sidebar basic Sidebar 1`] = `
   align-items: center;
 }
 
-.c3 > svg:first-child,
-.c3 > a > svg:first-child {
+.c4 > svg:first-child,
+.c4 > a > svg:first-child {
   margin-right: 12px;
 }
 
-.c0 {
-  width: 220px;
-  height: 100%;
+.c1 {
   padding-top: 20px;
   padding-bottom: 4px;
   background-color: #34495e;
 }
 
-.c0 > .c1 {
+.c1 > .c2 {
   margin-bottom: 8px;
 }
 
-.c0 > ul > li {
+.c1 > ul > li {
   margin-bottom: 4px;
 }
 
-.c0 > ul > li:last-of-type {
+.c1 > ul > li:last-of-type {
   margin-bottom: 0;
+}
+
+.c0 {
+  width: 220px;
+  height: 100vh;
 }
 
 <div
@@ -332,85 +421,77 @@ exports[`Storyshots organisms/Sidebar basic Sidebar 1`] = `
       }
     }
   >
-    <div
-      style={
-        Object {
-          "height": "100vh",
-        }
-      }
+    <nav
+      className="c0 c1"
     >
-      <nav
-        className="c0"
+      <h1
+        className="c2 c3"
       >
-        <h1
-          className="c1 c2"
-        >
-          App
-        </h1>
-        <ul>
-          <li>
-            <a
-              aria-current="true"
-              className="c3 active"
-              href="/dashboard"
-              onClick={[Function]}
-              style={Object {}}
-            >
-              <svg
-                fill="currentColor"
-                height="1em"
-                preserveAspectRatio="xMidYMid meet"
-                style={
-                  Object {
-                    "color": undefined,
-                    "verticalAlign": "middle",
-                  }
+        App
+      </h1>
+      <ul>
+        <li>
+          <a
+            aria-current="true"
+            className="c4 active"
+            href="/dashboard"
+            onClick={[Function]}
+            style={Object {}}
+          >
+            <svg
+              fill="currentColor"
+              height="1em"
+              preserveAspectRatio="xMidYMid meet"
+              style={
+                Object {
+                  "color": undefined,
+                  "verticalAlign": "middle",
                 }
-                viewBox="0 0 40 40"
-                width="1em"
-              >
-                <g>
-                  <path
-                    d="m21.6 5h13.4v10h-13.4v-10z m0 30v-16.6h13.4v16.6h-13.4z m-16.6 0v-10h13.4v10h-13.4z m0-13.4v-16.6h13.4v16.6h-13.4z"
-                  />
-                </g>
-              </svg>
-              Dashboard
-            </a>
-          </li>
-          <li>
-            <a
-              aria-current={false}
-              className="c3"
-              href="/calendar"
-              onClick={[Function]}
-              style={undefined}
+              }
+              viewBox="0 0 40 40"
+              width="1em"
             >
-              <svg
-                fill="currentColor"
-                height="1em"
-                preserveAspectRatio="xMidYMid meet"
-                style={
-                  Object {
-                    "color": undefined,
-                    "verticalAlign": "middle",
-                  }
+              <g>
+                <path
+                  d="m21.6 5h13.4v10h-13.4v-10z m0 30v-16.6h13.4v16.6h-13.4z m-16.6 0v-10h13.4v10h-13.4z m0-13.4v-16.6h13.4v16.6h-13.4z"
+                />
+              </g>
+            </svg>
+            Dashboard
+          </a>
+        </li>
+        <li>
+          <a
+            aria-current={false}
+            className="c4"
+            href="/calendar"
+            onClick={[Function]}
+            style={undefined}
+          >
+            <svg
+              fill="currentColor"
+              height="1em"
+              preserveAspectRatio="xMidYMid meet"
+              style={
+                Object {
+                  "color": undefined,
+                  "verticalAlign": "middle",
                 }
-                viewBox="0 0 40 40"
-                width="1em"
-              >
-                <g>
-                  <path
-                    d="m4.4 37.1h31.4v-22.8h-31.4v22.8z m8.5-27.1v-6.4q0-0.3-0.2-0.5t-0.5-0.2h-1.4q-0.3 0-0.5 0.2t-0.2 0.5v6.4q0 0.3 0.2 0.5t0.5 0.2h1.4q0.3 0 0.5-0.2t0.2-0.5z m17.2 0v-6.4q0-0.3-0.2-0.5t-0.5-0.2h-1.5q-0.3 0-0.5 0.2t-0.2 0.5v6.4q0 0.3 0.2 0.5t0.5 0.2h1.5q0.3 0 0.5-0.2t0.2-0.5z m8.5-1.4v28.5q0 1.2-0.8 2.1t-2 0.8h-31.4q-1.2 0-2.1-0.9t-0.8-2v-28.5q0-1.2 0.8-2t2.1-0.9h2.8v-2.1q0-1.5 1.1-2.6t2.5-1h1.4q1.5 0 2.5 1.1t1.1 2.5v2.1h8.6v-2.1q0-1.5 1-2.6t2.5-1h1.5q1.4 0 2.5 1.1t1 2.5v2.1h2.9q1.1 0 2 0.9t0.8 2z"
-                  />
-                </g>
-              </svg>
-              Calendar
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+              }
+              viewBox="0 0 40 40"
+              width="1em"
+            >
+              <g>
+                <path
+                  d="m4.4 37.1h31.4v-22.8h-31.4v22.8z m8.5-27.1v-6.4q0-0.3-0.2-0.5t-0.5-0.2h-1.4q-0.3 0-0.5 0.2t-0.2 0.5v6.4q0 0.3 0.2 0.5t0.5 0.2h1.4q0.3 0 0.5-0.2t0.2-0.5z m17.2 0v-6.4q0-0.3-0.2-0.5t-0.5-0.2h-1.5q-0.3 0-0.5 0.2t-0.2 0.5v6.4q0 0.3 0.2 0.5t0.5 0.2h1.5q0.3 0 0.5-0.2t0.2-0.5z m8.5-1.4v28.5q0 1.2-0.8 2.1t-2 0.8h-31.4q-1.2 0-2.1-0.9t-0.8-2v-28.5q0-1.2 0.8-2t2.1-0.9h2.8v-2.1q0-1.5 1.1-2.6t2.5-1h1.4q1.5 0 2.5 1.1t1.1 2.5v2.1h8.6v-2.1q0-1.5 1-2.6t2.5-1h1.5q1.4 0 2.5 1.1t1 2.5v2.1h2.9q1.1 0 2 0.9t0.8 2z"
+                />
+              </g>
+            </svg>
+            Calendar
+          </a>
+        </li>
+      </ul>
+    </nav>
   </div>
 </div>
 `;
@@ -421,7 +502,7 @@ exports[`Storyshots organisms/Sidebar/MenuHeader basic MenuHeader 1`] = `
   color: rgba(255,255,255,0.2);
 }
 
-.javIOE > .c0 {
+.fHdTqW > .c0 {
   margin-bottom: 8px;
 }
 
@@ -774,311 +855,320 @@ exports[`Storyshots pages/Calendar basic Content 1`] = `
       }
     }
   >
-    <h1
-      className="c0"
+    <div
+      style={
+        Object {
+          "height": "100vh",
+          "width": "100vw",
+        }
+      }
     >
-      Calendar
-    </h1>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
+      <h1
+        className="c0"
+      >
+        Calendar
+      </h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+    </div>
   </div>
 </div>
 `;
@@ -1135,29 +1225,33 @@ exports[`Storyshots pages/Home basic Content 1`] = `
 `;
 
 exports[`Storyshots templates/GenericPage basic GenericPage 1`] = `
-.c11 {
+.c8 {
   width: 100%;
   height: 128px;
   background-color: #34495e;
 }
 
-.c4 {
+.c2 {
   width: 100%;
-  height: 72px;
   background-color: #ffffff;
   border-bottom: 1px solid #bdc3c7;
 }
 
-.c2 {
+.c2 > .c3 {
+  width: 72px;
+  height: 72px;
+}
+
+.c1 {
   background-color: #34495e;
 }
 
-.c8 {
+.c6 {
   padding-left: 20px;
   color: rgba(255,255,255,0.2);
 }
 
-.c9 {
+.c7 {
   height: 52px;
   padding-left: 20px;
   color: rgba(255,255,255,0.6);
@@ -1167,20 +1261,20 @@ exports[`Storyshots templates/GenericPage basic GenericPage 1`] = `
   cursor: pointer;
 }
 
-.c9:hover {
+.c7:hover {
   background-color: rgba(0,0,0,0.2);
   color: #ffffff;
 }
 
-.c9.active {
+.c7.active {
   color: #34495e;
   background-color: #efefef;
   padding-left: 18px;
   border-left: 2px solid #ffc107;
 }
 
-.c9,
-.c9 > a {
+.c7,
+.c7 > a {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1191,28 +1285,26 @@ exports[`Storyshots templates/GenericPage basic GenericPage 1`] = `
   align-items: center;
 }
 
-.c9 > svg:first-child,
-.c9 > a > svg:first-child {
+.c7 > svg:first-child,
+.c7 > a > svg:first-child {
   margin-right: 12px;
 }
 
-.c6 {
-  width: 220px;
-  height: 100%;
+.c4 {
   padding-top: 20px;
   padding-bottom: 4px;
   background-color: #34495e;
 }
 
-.c6 > .c7 {
+.c4 > .c5 {
   margin-bottom: 8px;
 }
 
-.c6 > ul > li {
+.c4 > ul > li {
   margin-bottom: 4px;
 }
 
-.c6 > ul > li:last-of-type {
+.c4 > ul > li:last-of-type {
   margin-bottom: 0;
 }
 
@@ -1225,23 +1317,24 @@ exports[`Storyshots templates/GenericPage basic GenericPage 1`] = `
   max-height: 100vh;
 }
 
-.c0 > * {
+.c0 > *:nth-child(n + 5) {
   grid-area: content;
 }
 
-.c0 > .c1 {
+.c0 > *:nth-child(1) {
   grid-area: logo;
+  width: 220px;
 }
 
-.c0 > .c3 {
+.c0 > *:nth-child(2) {
   grid-area: header;
 }
 
-.c0 > .c5 {
+.c0 > *:nth-child(3) {
   grid-area: sidebar;
 }
 
-.c0 > .c10 {
+.c0 > *:nth-child(4) {
   grid-area: footer;
 }
 
@@ -1278,16 +1371,41 @@ exports[`Storyshots templates/GenericPage basic GenericPage 1`] = `
         className="c0"
       >
         <div
-          className="c1 c2"
+          className="c1"
         />
         <header
-          className="c3 c4"
-        />
+          className="c2"
+        >
+          <button
+            className="c3 "
+            onClick={[Function]}
+          >
+            <svg
+              fill="currentColor"
+              height={32}
+              preserveAspectRatio="xMidYMid meet"
+              style={
+                Object {
+                  "color": undefined,
+                  "verticalAlign": "middle",
+                }
+              }
+              viewBox="0 0 40 40"
+              width={32}
+            >
+              <g>
+                <path
+                  d="m5 10h30v3.4h-30v-3.4z m0 11.6v-3.2h30v3.2h-30z m0 8.4v-3.4h30v3.4h-30z"
+                />
+              </g>
+            </svg>
+          </button>
+        </header>
         <nav
-          className="c5 c6"
+          className="c4"
         >
           <h1
-            className="c7 c8"
+            className="c5 c6"
           >
             App
           </h1>
@@ -1295,7 +1413,7 @@ exports[`Storyshots templates/GenericPage basic GenericPage 1`] = `
             <li>
               <a
                 aria-current="true"
-                className="c9 active"
+                className="c7 active"
                 href="/dashboard"
                 onClick={[Function]}
                 style={Object {}}
@@ -1325,7 +1443,7 @@ exports[`Storyshots templates/GenericPage basic GenericPage 1`] = `
             <li>
               <a
                 aria-current={false}
-                className="c9"
+                className="c7"
                 href="/calendar"
                 onClick={[Function]}
                 style={undefined}
@@ -1354,13 +1472,228 @@ exports[`Storyshots templates/GenericPage basic GenericPage 1`] = `
             </li>
           </ul>
         </nav>
-        <p>
-          Hello world!
-        </p>
         <footer
-          className="c10 c11"
+          className="c8"
         />
+        <div
+          style={
+            Object {
+              "backgroundColor": "rebeccapurple",
+              "opacity": 0.8,
+            }
+          }
+        >
+          <p>
+            Hello world!
+          </p>
+        </div>
       </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots templates/GenericPage/Wrapper basic Wrapper with Sidebar 1`] = `
+.c0 {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  grid-template-rows: max-content 1fr max-content;
+  grid-template-areas: "logo header" "sidebar content" "footer content";
+  min-height: 100vh;
+  max-height: 100vh;
+}
+
+.c0 > *:nth-child(n + 5) {
+  grid-area: content;
+}
+
+.c0 > *:nth-child(1) {
+  grid-area: logo;
+  width: 220px;
+}
+
+.c0 > *:nth-child(2) {
+  grid-area: header;
+}
+
+.c0 > *:nth-child(3) {
+  grid-area: sidebar;
+}
+
+.c0 > *:nth-child(4) {
+  grid-area: footer;
+}
+
+.c1 {
+  width: 100px;
+  height: 50px;
+  background-color: pink;
+}
+
+.c2 {
+  width: 485px;
+  background-color: royalblue;
+}
+
+.c3 {
+  background-color: yellow;
+}
+
+.c4 {
+  height: 50px;
+  background-color: rebeccapurple;
+}
+
+.c5 {
+  background-color: seagreen;
+}
+
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": 0,
+      "display": "flex",
+      "justifyContent": "center",
+      "left": 0,
+      "overflow": "auto",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+      }
+    }
+  >
+    <div
+      className="c0"
+    >
+      <div
+        className="c1"
+      />
+      <div
+        className="c2"
+      />
+      <div
+        className="c3"
+      />
+      <div
+        className="c4"
+      />
+      <div
+        className="c5"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots templates/GenericPage/Wrapper basic Wrapper without Sidebar 1`] = `
+.c0 {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  grid-template-rows: max-content 1fr max-content;
+  grid-template-areas: "logo header" "sidebar content" "footer content";
+  min-height: 100vh;
+  max-height: 100vh;
+  grid-template-areas: "logo header" "content content" "content content";
+}
+
+.c0 > *:nth-child(n + 5) {
+  grid-area: content;
+}
+
+.c0 > *:nth-child(1) {
+  grid-area: logo;
+  width: 220px;
+}
+
+.c0 > *:nth-child(2) {
+  grid-area: header;
+}
+
+.c0 > *:nth-child(3) {
+  grid-area: sidebar;
+}
+
+.c0 > *:nth-child(4) {
+  grid-area: footer;
+}
+
+.c0 > *:nth-child(3),
+.c0 > *:nth-child(4) {
+  display: none;
+}
+
+.c1 {
+  width: 100px;
+  height: 50px;
+  background-color: pink;
+}
+
+.c2 {
+  width: 485px;
+  background-color: royalblue;
+}
+
+.c3 {
+  background-color: yellow;
+}
+
+.c4 {
+  height: 50px;
+  background-color: rebeccapurple;
+}
+
+.c5 {
+  background-color: seagreen;
+}
+
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": 0,
+      "display": "flex",
+      "justifyContent": "center",
+      "left": 0,
+      "overflow": "auto",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+      }
+    }
+  >
+    <div
+      className="c0"
+    >
+      <div
+        className="c1"
+      />
+      <div
+        className="c2"
+      />
+      <div
+        className="c3"
+      />
+      <div
+        className="c4"
+      />
+      <div
+        className="c5"
+      />
     </div>
   </div>
 </div>

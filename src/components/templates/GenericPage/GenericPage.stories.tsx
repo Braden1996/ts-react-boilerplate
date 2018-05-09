@@ -10,6 +10,8 @@ storiesOf('templates/GenericPage', module)
   .addDecorator(styles({ width: '100vw'}))
   .add('basic GenericPage', () => (
     <GenericPage>
-      <p>{text('Page content', 'Hello world!')}</p>
+      <div style={{backgroundColor: 'rebeccapurple', opacity: 0.8}}>
+        <p>{text('Page content', 'Hello world!')}</p>
+      </div>
     </GenericPage>
   ));

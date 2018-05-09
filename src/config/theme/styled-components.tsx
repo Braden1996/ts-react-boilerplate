@@ -4,7 +4,8 @@ import { theme } from './index';
 
 type themeType = Deep.Readonly<typeof theme>;
 type MyThemedProps<P> =
-  styledComponents.ThemedStyledProps<Deep.Readonly<P>, themeType>;
+  styledComponents.ThemedStyledProps<Deep.Readonly<P>,
+  themeType>;
 
 const {
   default: styled,
@@ -17,4 +18,10 @@ const {
 >;
 
 export default styled;
-export { css, injectGlobal, keyframes, ThemeProvider, MyThemedProps };
+export {
+  css,
+  injectGlobal,
+  keyframes,
+  ThemeProvider,
+  MyThemedProps
+};

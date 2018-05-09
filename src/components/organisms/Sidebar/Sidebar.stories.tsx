@@ -1,10 +1,14 @@
-// @ts-ignore
-import styles from "@sambego/storybook-styles";
 import { storiesOf } from '@storybook/react';
 import * as React from 'react';
 
-import Sidebar from './Sidebar';
+import styled from '@theme';
+
+import UnstyledSidebar from './Sidebar';
+
+const Sidebar = styled(UnstyledSidebar)`
+  width: 220px;
+  height: 100vh;
+`;
 
 storiesOf('organisms/Sidebar', module)
-  .addDecorator(styles({height: '100vh'}))
   .add('basic Sidebar', () => <Sidebar />);

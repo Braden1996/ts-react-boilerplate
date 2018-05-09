@@ -10,8 +10,6 @@ import styled from '@theme';
 import { MenuHeader, MenuItem } from './components';
 
 const Container = styled.nav`
-  width: 220px;
-  height: 100%;
   padding-top: ${p => p.theme.dimensions.large}px;
   padding-bottom: ${p => p.theme.dimensions.tiny}px;
   background-color: ${p => p.theme.colors.wetAsphalt};
@@ -29,7 +27,7 @@ const Container = styled.nav`
   }
 `;
 
-interface ISidebarProps {
+interface IProps {
   className?: string;
 }
 
@@ -40,7 +38,7 @@ const isDashboardActive: $PropertyType<NavLinkProps, 'isActive'> =
     matchPath('/dashboard', {path: pathname})
   );
 
-const Sidebar: React.SFC<ISidebarProps> = props => (
+const Sidebar: React.SFC<IProps> = props => (
   <Container className={props.className}>
     <MenuHeader>App</MenuHeader>
     <ul>
