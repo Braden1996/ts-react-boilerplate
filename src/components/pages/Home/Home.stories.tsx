@@ -1,7 +1,7 @@
 import { storiesOf } from '@storybook/react';
 import * as React from 'react';
 
-import Content from './Content';
+import Home from './Home';
 
 storiesOf('pages/Home', module)
-  .add('basic Content', () => <Content />);
+  .add('basic Home', () => <Home />);

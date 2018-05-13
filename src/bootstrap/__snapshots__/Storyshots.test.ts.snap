@@ -828,7 +828,7 @@ exports[`Storyshots organisms/Sidebar/MenuItem multiple MenuItem 1`] = `
 </div>
 `;
 
-exports[`Storyshots pages/Calendar basic Content 1`] = `
+exports[`Storyshots pages/Calendar basic Calendar 1`] = `
 .c0 {
   color: #f44336;
 }
@@ -1173,7 +1173,7 @@ exports[`Storyshots pages/Calendar basic Content 1`] = `
 </div>
 `;
 
-exports[`Storyshots pages/Home basic Content 1`] = `
+exports[`Storyshots pages/Home basic Home 1`] = `
 .c1 {
   height: 24px;
   background-color: #efefef;
