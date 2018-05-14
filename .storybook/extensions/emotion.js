@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { ThemeProvider } from 'styled-components';
+import { ThemeProvider } from 'emotion-theming';
 
 import injectGlobalStyle from '../../src/bootstrap/globalStyle';
 

@@ -10,7 +10,7 @@ const Container = styled.header`
   background-color: ${p => p.theme.colors.white};
   border-bottom: 1px solid ${p => p.theme.colors.silver};
 
-  > ${IconButton} {
+  & > ${IconButton as any} {
     width: ${p => p.theme.dimensions.mult(18)}px;
     height: ${p => p.theme.dimensions.mult(18)}px;
   }

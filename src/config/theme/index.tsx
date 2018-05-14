@@ -1,3 +1,5 @@
+import styled, { ThemedReactEmotionInterface } from 'react-emotion';
+
 const gridMultiple = (multiplier: number) => multiplier * 4;
 
 export const theme  = {
@@ -62,6 +64,4 @@ export const theme  = {
   }
 };
 
-import styled from './styled-components';
-export default styled;
-export * from './styled-components';
+export default styled as ThemedReactEmotionInterface<typeof theme>;

@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots atoms/tags/Button basic Button 1`] = `
-.c0 {
+.emotion-0 {
   height: 32px;
   background-color: #efefef;
 }
@@ -29,7 +29,7 @@ exports[`Storyshots atoms/tags/Button basic Button 1`] = `
     }
   >
     <button
-      className="c0"
+      className="emotion-0 emotion-1"
       disabled={false}
       onClick={[Function]}
       size="medium"
@@ -41,7 +41,7 @@ exports[`Storyshots atoms/tags/Button basic Button 1`] = `
 `;
 
 exports[`Storyshots atoms/tags/H1 basic H1 1`] = `
-.c0 {
+.emotion-0 {
   color: #f44336;
 }
 
@@ -68,7 +68,7 @@ exports[`Storyshots atoms/tags/H1 basic H1 1`] = `
     }
   >
     <h1
-      className="c0"
+      className="emotion-0 emotion-1"
     >
       Glowing
     </h1>
@@ -77,7 +77,7 @@ exports[`Storyshots atoms/tags/H1 basic H1 1`] = `
 `;
 
 exports[`Storyshots atoms/tags/H1 emoji H1 1`] = `
-.c0 {
+.emotion-0 {
   color: #2196f3;
   text-shadow: 0 0 10px #e91e63;
 }
@@ -105,7 +105,7 @@ exports[`Storyshots atoms/tags/H1 emoji H1 1`] = `
     }
   >
     <h1
-      className="c0"
+      className="emotion-0 emotion-1"
     >
       💩🧠🎁🚀
     </h1>
@@ -114,7 +114,7 @@ exports[`Storyshots atoms/tags/H1 emoji H1 1`] = `
 `;
 
 exports[`Storyshots organisms/Footer basic Footer 1`] = `
-.c0 {
+.emotion-0 {
   width: 100%;
   height: 128px;
   background-color: #34495e;
@@ -150,7 +150,7 @@ exports[`Storyshots organisms/Footer basic Footer 1`] = `
       }
     >
       <footer
-        className="c0"
+        className="emotion-0 emotion-1"
       />
     </div>
   </div>
@@ -158,13 +158,13 @@ exports[`Storyshots organisms/Footer basic Footer 1`] = `
 `;
 
 exports[`Storyshots organisms/Header basic Header 1`] = `
-.c0 {
+.emotion-2 {
   width: 100%;
   background-color: #ffffff;
   border-bottom: 1px solid #bdc3c7;
 }
 
-.c0 > .c1 {
+.emotion-2 > .emotion-1 {
   width: 72px;
   height: 72px;
 }
@@ -199,10 +199,10 @@ exports[`Storyshots organisms/Header basic Header 1`] = `
       }
     >
       <header
-        className="c0"
+        className="emotion-2 emotion-3"
       >
         <button
-          className="c1 "
+          className="emotion-0 emotion-1"
           onClick={[Function]}
         >
           <svg
@@ -232,12 +232,7 @@ exports[`Storyshots organisms/Header basic Header 1`] = `
 `;
 
 exports[`Storyshots organisms/Header/IconButton basic IconButton 1`] = `
-.fwulYJ > .c1 {
-  width: 72px;
-  height: 72px;
-}
-
-.c0 {
+.emotion-0 {
   width: 64px;
   height: 64px;
 }
@@ -265,7 +260,7 @@ exports[`Storyshots organisms/Header/IconButton basic IconButton 1`] = `
     }
   >
     <button
-      className="c0 c1 "
+      className="emotion-0 emotion-1"
       onClick={[Function]}
     >
       <svg
@@ -293,11 +288,8 @@ exports[`Storyshots organisms/Header/IconButton basic IconButton 1`] = `
 `;
 
 exports[`Storyshots organisms/Logo basic Logo 1`] = `
-.c1 {
+.emotion-0 {
   background-color: #34495e;
-}
-
-.c0 {
   width: 220px;
   height: 73px;
 }
@@ -325,19 +317,46 @@ exports[`Storyshots organisms/Logo basic Logo 1`] = `
     }
   >
     <div
-      className="c0 c1"
+      className="emotion-0 emotion-1"
     />
   </div>
 </div>
 `;
 
 exports[`Storyshots organisms/Sidebar basic Sidebar 1`] = `
-.c3 {
+.emotion-7 {
+  padding-top: 20px;
+  padding-bottom: 4px;
+  background-color: #34495e;
+  width: 220px;
+  height: 100vh;
+}
+
+.emotion-7 > .emotion-1 {
+  margin-bottom: 8px;
+}
+
+.emotion-7 > ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.emotion-7 > ul > li {
+  margin-bottom: 4px;
+}
+
+.emotion-7 > ul > li:last-of-type {
+  margin-bottom: 0;
+}
+
+.emotion-0 {
   padding-left: 20px;
   color: rgba(255,255,255,0.2);
 }
 
-.c4 {
+.emotion-2 {
   height: 52px;
   padding-left: 20px;
   color: rgba(255,255,255,0.6);
@@ -347,20 +366,20 @@ exports[`Storyshots organisms/Sidebar basic Sidebar 1`] = `
   cursor: pointer;
 }
 
-.c4:hover {
+.emotion-2:hover {
   background-color: rgba(0,0,0,0.2);
   color: #ffffff;
 }
 
-.c4.active {
+.emotion-2.active {
   color: #34495e;
   background-color: #efefef;
   padding-left: 18px;
   border-left: 2px solid #ffc107;
 }
 
-.c4,
-.c4 > a {
+.emotion-2,
+.emotion-2 > a {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -371,32 +390,9 @@ exports[`Storyshots organisms/Sidebar basic Sidebar 1`] = `
   align-items: center;
 }
 
-.c4 > svg:first-child,
-.c4 > a > svg:first-child {
+.emotion-2 > svg:first-child,
+.emotion-2 > a > svg:first-child {
   margin-right: 12px;
-}
-
-.c1 {
-  padding-top: 20px;
-  padding-bottom: 4px;
-  background-color: #34495e;
-}
-
-.c1 > .c2 {
-  margin-bottom: 8px;
-}
-
-.c1 > ul > li {
-  margin-bottom: 4px;
-}
-
-.c1 > ul > li:last-of-type {
-  margin-bottom: 0;
-}
-
-.c0 {
-  width: 220px;
-  height: 100vh;
 }
 
 <div
@@ -422,10 +418,10 @@ exports[`Storyshots organisms/Sidebar basic Sidebar 1`] = `
     }
   >
     <nav
-      className="c0 c1"
+      className="emotion-6 emotion-7 emotion-8"
     >
       <h1
-        className="c2 c3"
+        className="emotion-0 emotion-1"
       >
         App
       </h1>
@@ -433,7 +429,7 @@ exports[`Storyshots organisms/Sidebar basic Sidebar 1`] = `
         <li>
           <a
             aria-current="true"
-            className="c4 active"
+            className="emotion-2 emotion-3 active"
             href="/dashboard"
             onClick={[Function]}
             style={Object {}}
@@ -463,7 +459,7 @@ exports[`Storyshots organisms/Sidebar basic Sidebar 1`] = `
         <li>
           <a
             aria-current={false}
-            className="c4"
+            className="emotion-2 emotion-3"
             href="/calendar"
             onClick={[Function]}
             style={undefined}
@@ -497,13 +493,9 @@ exports[`Storyshots organisms/Sidebar basic Sidebar 1`] = `
 `;
 
 exports[`Storyshots organisms/Sidebar/MenuHeader basic MenuHeader 1`] = `
-.c1 {
+.emotion-0 {
   padding-left: 20px;
   color: rgba(255,255,255,0.2);
-}
-
-.fHdTqW > .c0 {
-  margin-bottom: 8px;
 }
 
 <div
@@ -529,7 +521,7 @@ exports[`Storyshots organisms/Sidebar/MenuHeader basic MenuHeader 1`] = `
     }
   >
     <h1
-      className="c0 c1"
+      className="emotion-0 emotion-1"
     >
       Menu
     </h1>
@@ -538,7 +530,7 @@ exports[`Storyshots organisms/Sidebar/MenuHeader basic MenuHeader 1`] = `
 `;
 
 exports[`Storyshots organisms/Sidebar/MenuItem basic MenuItem 1`] = `
-.c0 {
+.emotion-0 {
   height: 52px;
   padding-left: 20px;
   color: rgba(255,255,255,0.6);
@@ -548,20 +540,20 @@ exports[`Storyshots organisms/Sidebar/MenuItem basic MenuItem 1`] = `
   cursor: pointer;
 }
 
-.c0:hover {
+.emotion-0:hover {
   background-color: rgba(0,0,0,0.2);
   color: #ffffff;
 }
 
-.c0.active {
+.emotion-0.active {
   color: #34495e;
   background-color: #efefef;
   padding-left: 18px;
   border-left: 2px solid #ffc107;
 }
 
-.c0,
-.c0 > a {
+.emotion-0,
+.emotion-0 > a {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -572,8 +564,8 @@ exports[`Storyshots organisms/Sidebar/MenuItem basic MenuItem 1`] = `
   align-items: center;
 }
 
-.c0 > svg:first-child,
-.c0 > a > svg:first-child {
+.emotion-0 > svg:first-child,
+.emotion-0 > a > svg:first-child {
   margin-right: 12px;
 }
 
@@ -608,7 +600,7 @@ exports[`Storyshots organisms/Sidebar/MenuItem basic MenuItem 1`] = `
     >
       <a
         aria-current={false}
-        className="c0"
+        className="emotion-0 emotion-1"
         href="/hello-world"
         onClick={[Function]}
         style={undefined}
@@ -621,7 +613,7 @@ exports[`Storyshots organisms/Sidebar/MenuItem basic MenuItem 1`] = `
 `;
 
 exports[`Storyshots organisms/Sidebar/MenuItem basic svg MenuItem 1`] = `
-.c0 {
+.emotion-0 {
   height: 52px;
   padding-left: 20px;
   color: rgba(255,255,255,0.6);
@@ -631,20 +623,20 @@ exports[`Storyshots organisms/Sidebar/MenuItem basic svg MenuItem 1`] = `
   cursor: pointer;
 }
 
-.c0:hover {
+.emotion-0:hover {
   background-color: rgba(0,0,0,0.2);
   color: #ffffff;
 }
 
-.c0.active {
+.emotion-0.active {
   color: #34495e;
   background-color: #efefef;
   padding-left: 18px;
   border-left: 2px solid #ffc107;
 }
 
-.c0,
-.c0 > a {
+.emotion-0,
+.emotion-0 > a {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -655,8 +647,8 @@ exports[`Storyshots organisms/Sidebar/MenuItem basic svg MenuItem 1`] = `
   align-items: center;
 }
 
-.c0 > svg:first-child,
-.c0 > a > svg:first-child {
+.emotion-0 > svg:first-child,
+.emotion-0 > a > svg:first-child {
   margin-right: 12px;
 }
 
@@ -691,7 +683,7 @@ exports[`Storyshots organisms/Sidebar/MenuItem basic svg MenuItem 1`] = `
     >
       <a
         aria-current={false}
-        className="c0"
+        className="emotion-0 emotion-1"
         href="/hello-world"
         onClick={[Function]}
         style={undefined}
@@ -723,7 +715,7 @@ exports[`Storyshots organisms/Sidebar/MenuItem basic svg MenuItem 1`] = `
 `;
 
 exports[`Storyshots organisms/Sidebar/MenuItem multiple MenuItem 1`] = `
-.c0 {
+.emotion-0 {
   height: 52px;
   padding-left: 20px;
   color: rgba(255,255,255,0.6);
@@ -733,20 +725,20 @@ exports[`Storyshots organisms/Sidebar/MenuItem multiple MenuItem 1`] = `
   cursor: pointer;
 }
 
-.c0:hover {
+.emotion-0:hover {
   background-color: rgba(0,0,0,0.2);
   color: #ffffff;
 }
 
-.c0.active {
+.emotion-0.active {
   color: #34495e;
   background-color: #efefef;
   padding-left: 18px;
   border-left: 2px solid #ffc107;
 }
 
-.c0,
-.c0 > a {
+.emotion-0,
+.emotion-0 > a {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -757,8 +749,8 @@ exports[`Storyshots organisms/Sidebar/MenuItem multiple MenuItem 1`] = `
   align-items: center;
 }
 
-.c0 > svg:first-child,
-.c0 > a > svg:first-child {
+.emotion-0 > svg:first-child,
+.emotion-0 > a > svg:first-child {
   margin-right: 12px;
 }
 
@@ -794,7 +786,7 @@ exports[`Storyshots organisms/Sidebar/MenuItem multiple MenuItem 1`] = `
       <ul>
         <a
           aria-current={false}
-          className="c0"
+          className="emotion-0 emotion-1"
           href="/Apple"
           onClick={[Function]}
           style={undefined}
@@ -804,7 +796,7 @@ exports[`Storyshots organisms/Sidebar/MenuItem multiple MenuItem 1`] = `
         </a>
         <a
           aria-current={false}
-          className="c0"
+          className="emotion-0 emotion-1"
           href="/Banana"
           onClick={[Function]}
           style={undefined}
@@ -814,7 +806,7 @@ exports[`Storyshots organisms/Sidebar/MenuItem multiple MenuItem 1`] = `
         </a>
         <a
           aria-current={false}
-          className="c0"
+          className="emotion-0 emotion-1"
           href="/Cherry"
           onClick={[Function]}
           style={undefined}
@@ -829,7 +821,7 @@ exports[`Storyshots organisms/Sidebar/MenuItem multiple MenuItem 1`] = `
 `;
 
 exports[`Storyshots pages/Calendar basic Calendar 1`] = `
-.c0 {
+.emotion-0 {
   color: #f44336;
 }
 
@@ -864,7 +856,7 @@ exports[`Storyshots pages/Calendar basic Calendar 1`] = `
       }
     >
       <h1
-        className="c0"
+        className="emotion-0 emotion-1"
       >
         Calendar
       </h1>
@@ -1174,13 +1166,13 @@ exports[`Storyshots pages/Calendar basic Calendar 1`] = `
 `;
 
 exports[`Storyshots pages/Home basic Home 1`] = `
-.c1 {
-  height: 24px;
-  background-color: #efefef;
+.emotion-0 {
+  color: #f44336;
 }
 
-.c0 {
-  color: #f44336;
+.emotion-2 {
+  height: 24px;
+  background-color: #efefef;
 }
 
 <div
@@ -1206,12 +1198,12 @@ exports[`Storyshots pages/Home basic Home 1`] = `
     }
   >
     <h1
-      className="c0"
+      className="emotion-0 emotion-1"
     >
       Hello world
     </h1>
     <button
-      className="c1"
+      className="emotion-2 emotion-3"
       disabled={false}
       size="small"
     >
@@ -1225,33 +1217,29 @@ exports[`Storyshots pages/Home basic Home 1`] = `
 `;
 
 exports[`Storyshots templates/GenericPage basic GenericPage 1`] = `
-.c8 {
+.emotion-16 {
   width: 100%;
   height: 128px;
   background-color: #34495e;
 }
 
-.c2 {
+.emotion-5 {
   width: 100%;
   background-color: #ffffff;
   border-bottom: 1px solid #bdc3c7;
 }
 
-.c2 > .c3 {
+.emotion-5 > .emotion-3 {
   width: 72px;
   height: 72px;
 }
 
-.c1 {
-  background-color: #34495e;
-}
-
-.c6 {
+.emotion-7 {
   padding-left: 20px;
   color: rgba(255,255,255,0.2);
 }
 
-.c7 {
+.emotion-9 {
   height: 52px;
   padding-left: 20px;
   color: rgba(255,255,255,0.6);
@@ -1261,20 +1249,20 @@ exports[`Storyshots templates/GenericPage basic GenericPage 1`] = `
   cursor: pointer;
 }
 
-.c7:hover {
+.emotion-9:hover {
   background-color: rgba(0,0,0,0.2);
   color: #ffffff;
 }
 
-.c7.active {
+.emotion-9.active {
   color: #34495e;
   background-color: #efefef;
   padding-left: 18px;
   border-left: 2px solid #ffc107;
 }
 
-.c7,
-.c7 > a {
+.emotion-9,
+.emotion-9 > a {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1285,30 +1273,12 @@ exports[`Storyshots templates/GenericPage basic GenericPage 1`] = `
   align-items: center;
 }
 
-.c7 > svg:first-child,
-.c7 > a > svg:first-child {
+.emotion-9 > svg:first-child,
+.emotion-9 > a > svg:first-child {
   margin-right: 12px;
 }
 
-.c4 {
-  padding-top: 20px;
-  padding-bottom: 4px;
-  background-color: #34495e;
-}
-
-.c4 > .c5 {
-  margin-bottom: 8px;
-}
-
-.c4 > ul > li {
-  margin-bottom: 4px;
-}
-
-.c4 > ul > li:last-of-type {
-  margin-bottom: 0;
-}
-
-.c0 {
+.emotion-18 {
   display: grid;
   grid-template-columns: max-content 1fr;
   grid-template-rows: max-content 1fr max-content;
@@ -1317,25 +1287,54 @@ exports[`Storyshots templates/GenericPage basic GenericPage 1`] = `
   max-height: 100vh;
 }
 
-.c0 > *:nth-child(n + 5) {
+.emotion-18 > *:nth-child(n + 5) {
   grid-area: content;
 }
 
-.c0 > *:nth-child(1) {
+.emotion-18 > *:nth-child(1) {
   grid-area: logo;
   width: 220px;
 }
 
-.c0 > *:nth-child(2) {
+.emotion-18 > *:nth-child(2) {
   grid-area: header;
 }
 
-.c0 > *:nth-child(3) {
+.emotion-18 > *:nth-child(3) {
   grid-area: sidebar;
 }
 
-.c0 > *:nth-child(4) {
+.emotion-18 > *:nth-child(4) {
   grid-area: footer;
+}
+
+.emotion-0 {
+  background-color: #34495e;
+}
+
+.emotion-14 {
+  padding-top: 20px;
+  padding-bottom: 4px;
+  background-color: #34495e;
+}
+
+.emotion-14 > .emotion-8 {
+  margin-bottom: 8px;
+}
+
+.emotion-14 > ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.emotion-14 > ul > li {
+  margin-bottom: 4px;
+}
+
+.emotion-14 > ul > li:last-of-type {
+  margin-bottom: 0;
 }
 
 <div
@@ -1368,16 +1367,16 @@ exports[`Storyshots templates/GenericPage basic GenericPage 1`] = `
       }
     >
       <div
-        className="c0"
+        className="emotion-18 emotion-19"
       >
         <div
-          className="c1"
+          className="emotion-0 emotion-1"
         />
         <header
-          className="c2"
+          className="emotion-4 emotion-5 emotion-6"
         >
           <button
-            className="c3 "
+            className="emotion-2 emotion-3"
             onClick={[Function]}
           >
             <svg
@@ -1402,10 +1401,10 @@ exports[`Storyshots templates/GenericPage basic GenericPage 1`] = `
           </button>
         </header>
         <nav
-          className="c4"
+          className="emotion-13 emotion-14 emotion-15"
         >
           <h1
-            className="c5 c6"
+            className="emotion-7 emotion-8"
           >
             App
           </h1>
@@ -1413,7 +1412,7 @@ exports[`Storyshots templates/GenericPage basic GenericPage 1`] = `
             <li>
               <a
                 aria-current="true"
-                className="c7 active"
+                className="emotion-9 emotion-10 active"
                 href="/dashboard"
                 onClick={[Function]}
                 style={Object {}}
@@ -1443,7 +1442,7 @@ exports[`Storyshots templates/GenericPage basic GenericPage 1`] = `
             <li>
               <a
                 aria-current={false}
-                className="c7"
+                className="emotion-9 emotion-10"
                 href="/calendar"
                 onClick={[Function]}
                 style={undefined}
@@ -1473,7 +1472,7 @@ exports[`Storyshots templates/GenericPage basic GenericPage 1`] = `
           </ul>
         </nav>
         <footer
-          className="c8"
+          className="emotion-16 emotion-17"
         />
         <div
           style={
@@ -1494,7 +1493,7 @@ exports[`Storyshots templates/GenericPage basic GenericPage 1`] = `
 `;
 
 exports[`Storyshots templates/GenericPage/Wrapper basic Wrapper with Sidebar 1`] = `
-.c0 {
+.emotion-10 {
   display: grid;
   grid-template-columns: max-content 1fr;
   grid-template-rows: max-content 1fr max-content;
@@ -1503,48 +1502,48 @@ exports[`Storyshots templates/GenericPage/Wrapper basic Wrapper with Sidebar 1`]
   max-height: 100vh;
 }
 
-.c0 > *:nth-child(n + 5) {
+.emotion-10 > *:nth-child(n + 5) {
   grid-area: content;
 }
 
-.c0 > *:nth-child(1) {
+.emotion-10 > *:nth-child(1) {
   grid-area: logo;
   width: 220px;
 }
 
-.c0 > *:nth-child(2) {
+.emotion-10 > *:nth-child(2) {
   grid-area: header;
 }
 
-.c0 > *:nth-child(3) {
+.emotion-10 > *:nth-child(3) {
   grid-area: sidebar;
 }
 
-.c0 > *:nth-child(4) {
+.emotion-10 > *:nth-child(4) {
   grid-area: footer;
 }
 
-.c1 {
+.emotion-0 {
   width: 100px;
   height: 50px;
   background-color: pink;
 }
 
-.c2 {
+.emotion-2 {
   width: 485px;
   background-color: royalblue;
 }
 
-.c3 {
+.emotion-4 {
   background-color: yellow;
 }
 
-.c4 {
+.emotion-6 {
   height: 50px;
   background-color: rebeccapurple;
 }
 
-.c5 {
+.emotion-8 {
   background-color: seagreen;
 }
 
@@ -1571,22 +1570,22 @@ exports[`Storyshots templates/GenericPage/Wrapper basic Wrapper with Sidebar 1`]
     }
   >
     <div
-      className="c0"
+      className="emotion-10 emotion-11"
     >
       <div
-        className="c1"
+        className="emotion-0 emotion-1"
       />
       <div
-        className="c2"
+        className="emotion-2 emotion-3"
       />
       <div
-        className="c3"
+        className="emotion-4 emotion-5"
       />
       <div
-        className="c4"
+        className="emotion-6 emotion-7"
       />
       <div
-        className="c5"
+        className="emotion-8 emotion-9"
       />
     </div>
   </div>
@@ -1594,7 +1593,31 @@ exports[`Storyshots templates/GenericPage/Wrapper basic Wrapper with Sidebar 1`]
 `;
 
 exports[`Storyshots templates/GenericPage/Wrapper basic Wrapper without Sidebar 1`] = `
-.c0 {
+.emotion-0 {
+  width: 100px;
+  height: 50px;
+  background-color: pink;
+}
+
+.emotion-2 {
+  width: 485px;
+  background-color: royalblue;
+}
+
+.emotion-4 {
+  background-color: yellow;
+}
+
+.emotion-6 {
+  height: 50px;
+  background-color: rebeccapurple;
+}
+
+.emotion-8 {
+  background-color: seagreen;
+}
+
+.emotion-10 {
   display: grid;
   grid-template-columns: max-content 1fr;
   grid-template-rows: max-content 1fr max-content;
@@ -1604,54 +1627,30 @@ exports[`Storyshots templates/GenericPage/Wrapper basic Wrapper without Sidebar 
   grid-template-areas: "logo header" "content content" "content content";
 }
 
-.c0 > *:nth-child(n + 5) {
+.emotion-10 > *:nth-child(n + 5) {
   grid-area: content;
 }
 
-.c0 > *:nth-child(1) {
+.emotion-10 > *:nth-child(1) {
   grid-area: logo;
   width: 220px;
 }
 
-.c0 > *:nth-child(2) {
+.emotion-10 > *:nth-child(2) {
   grid-area: header;
 }
 
-.c0 > *:nth-child(3) {
+.emotion-10 > *:nth-child(3) {
   grid-area: sidebar;
 }
 
-.c0 > *:nth-child(4) {
+.emotion-10 > *:nth-child(4) {
   grid-area: footer;
 }
 
-.c0 > *:nth-child(3),
-.c0 > *:nth-child(4) {
+.emotion-10 > *:nth-child(3),
+.emotion-10 > *:nth-child(4) {
   display: none;
-}
-
-.c1 {
-  width: 100px;
-  height: 50px;
-  background-color: pink;
-}
-
-.c2 {
-  width: 485px;
-  background-color: royalblue;
-}
-
-.c3 {
-  background-color: yellow;
-}
-
-.c4 {
-  height: 50px;
-  background-color: rebeccapurple;
-}
-
-.c5 {
-  background-color: seagreen;
 }
 
 <div
@@ -1677,22 +1676,22 @@ exports[`Storyshots templates/GenericPage/Wrapper basic Wrapper without Sidebar 
     }
   >
     <div
-      className="c0"
+      className="emotion-10 emotion-11"
     >
       <div
-        className="c1"
+        className="emotion-0 emotion-1"
       />
       <div
-        className="c2"
+        className="emotion-2 emotion-3"
       />
       <div
-        className="c3"
+        className="emotion-4 emotion-5"
       />
       <div
-        className="c4"
+        className="emotion-6 emotion-7"
       />
       <div
-        className="c5"
+        className="emotion-8 emotion-9"
       />
     </div>
   </div>
@@ -1700,7 +1699,7 @@ exports[`Storyshots templates/GenericPage/Wrapper basic Wrapper without Sidebar 
 `;
 
 exports[`Storyshots templates/GenericPageContent basic GenericPageContent 1`] = `
-.c0 {
+.emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1709,7 +1708,7 @@ exports[`Storyshots templates/GenericPageContent basic GenericPageContent 1`] = 
   background-color: #efefef;
 }
 
-.c1 {
+.emotion-0 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -1751,10 +1750,10 @@ exports[`Storyshots templates/GenericPageContent basic GenericPageContent 1`] = 
       }
     >
       <div
-        className="c0"
+        className="emotion-2 emotion-3"
       >
         <main
-          className="c1"
+          className="emotion-0 emotion-1"
         >
           <p>
             Hello world!

@@ -1,6 +1,8 @@
+import { css } from 'emotion';
 import * as React from 'react';
 
-import styled, { css, MyThemedProps as P } from '@theme';
+import styled from '@theme';
+
 
 interface IGridProps {
   showSidebar?: boolean;
@@ -10,7 +12,7 @@ enum PARTS { LOGO = 1, HEADER, SIDEBAR, FOOTER }
 
 const partsLength = Object.keys(PARTS).length / 2;
 
-const WrapperGrid = styled.div`
+const WrapperGrid = styled<IGridProps, 'div'>('div')`
   display: grid;
   grid-template-columns: max-content 1fr;
   grid-template-rows: max-content 1fr max-content;
@@ -30,7 +32,7 @@ const WrapperGrid = styled.div`
   > *:nth-child(${PARTS.SIDEBAR}) { grid-area: sidebar; }
   > *:nth-child(${PARTS.FOOTER}) { grid-area: footer; }
 
-  ${(p: P<IGridProps>) => !p.showSidebar && css`
+  ${p => !p.showSidebar && css`
     grid-template-areas:
       "logo header"
       "content content"

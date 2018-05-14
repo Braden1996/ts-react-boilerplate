@@ -1,11 +1,12 @@
 import { transparentize } from 'polished';
-import { NavLink } from 'react-router-dom';
+import { NavLink, NavLinkProps } from 'react-router-dom';
+import withProps from 'recompose/withProps';
 
 import styled from '@theme';
 
-const MenuItem = styled(NavLink).attrs({
-  activeClassName: 'active'
-})`
+export default withProps({
+	activeClassName: 'active',
+} as NavLinkProps)(styled(NavLink)`
   height: ${p => p.theme.dimensions.mult(13)}px;
   padding-left: ${p => p.theme.dimensions.large}px;
 
@@ -35,6 +36,4 @@ const MenuItem = styled(NavLink).attrs({
       margin-right: ${p => p.theme.dimensions.medium}px;
     }
   }
-`;
-
-export default MenuItem;
+`) as any;

@@ -48,7 +48,8 @@
     "acceptance-tests",
     "webpack",
     "jest",
-    "src/setupTests.ts",
-    ".storybook"
+    ".storybook",
+    "internal",
+    "config-overrides.js"
   ]
 }

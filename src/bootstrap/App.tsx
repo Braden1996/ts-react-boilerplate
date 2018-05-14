@@ -1,10 +1,11 @@
+import { ThemeProvider } from 'emotion-theming';
 import { History } from 'history';
 import * as React from 'react';
 import { Provider } from 'react-redux';
 import { ConnectedRouter } from 'react-router-redux';
 import { Store } from 'redux';
 
-import {theme as theTheme, ThemeProvider} from '@theme';
+import { theme as theTheme } from '@theme';
 
 import Router from './Router';
 

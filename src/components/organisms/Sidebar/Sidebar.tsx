@@ -14,15 +14,22 @@ const Container = styled.nav`
   padding-bottom: ${p => p.theme.dimensions.tiny}px;
   background-color: ${p => p.theme.colors.wetAsphalt};
 
-  > ${MenuHeader} {
+  & > ${MenuHeader as any} {
     margin-bottom: ${p => p.theme.dimensions.small}px;
   }
 
-  > ul > li {
-    margin-bottom: ${p => p.theme.dimensions.tiny}px;
+  & > ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 
-    &:last-of-type {
-      margin-bottom: 0;
+    & > li {
+      margin-bottom: ${p => p.theme.dimensions.tiny}px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
     }
   }
 `;

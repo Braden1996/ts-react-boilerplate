@@ -1,12 +1,14 @@
-import styled, { css, MyThemedProps as P } from '@theme';
+import { css } from 'emotion';
+
+import styled from '@theme';
 
 interface IProps {
   disabled?: boolean;
   size?: 'small' | 'medium' | 'large';
 }
 
-const Button = styled.button`
-  height: ${(p: P<IProps>) => {
+const Button = styled<IProps, 'button'>('button')`
+  height: ${p => {
     switch (p.size) {
       case 'small':
         return 24;
@@ -20,7 +22,7 @@ const Button = styled.button`
 
   ${p => p.disabled && css`
     pointer-events: none;
-    background-color: ${p2 => p2.theme.colors.offWhite};
+    background-color: ${p.theme.colors.offWhite};
   `}
 `;
 

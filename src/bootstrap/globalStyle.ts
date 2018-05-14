@@ -1,10 +1,11 @@
-import { injectGlobal } from 'styled-components';
-import reset from 'styled-reset';
+import { injectGlobal } from 'emotion';
+// @ts-ignore
+import emotionNormalize from 'emotion-normalize';
 
 export default function() {
   // tslint:disable no-unused-expression
   injectGlobal`
-    ${reset}
+    ${emotionNormalize}
 
     html {
       box-sizing: border-box;

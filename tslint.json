@@ -2,7 +2,9 @@
   "extends": ["tslint:recommended", "tslint-react", "tslint-config-prettier"],
   "linterOptions": {
     "exclude": [
+      "storybook/**/*.js",
       "config/**/*.js",
+      "internal/**/*.js",
       "node_modules/**/*.ts"
     ]
   },

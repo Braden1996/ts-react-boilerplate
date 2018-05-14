@@ -1,9 +1,9 @@
-import { default as background } from './background';
-import { default as options } from './options';
-import { default as styledComponents } from './styled-components';
+import background from './background';
+import emotion from './emotion';
+import options from './options';
 
 export default function init(storybook) {
   background(storybook);
+  emotion(storybook);
   options(storybook);
-  styledComponents(storybook);
 }
