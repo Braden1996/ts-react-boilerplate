@@ -21,12 +21,14 @@
     "redux": "^4.0.0",
     "redux-saga": "^0.16.0",
     "reselect": "^3.0.1",
+    "tslint-config-airbnb": "^5.9.2",
     "typesafe-actions": "^1.1.2",
     "utility-types": "^2.0.0"
   },
   "scripts": {
     "start": "react-app-rewired start --scripts-version react-scripts-ts",
     "build": "react-app-rewired build --scripts-version react-scripts-ts",
+    "pretest": "tslint --project '.'",
     "test": "react-app-rewired test --scripts-version react-scripts-ts --env=jsdom",
     "eject": "react-scripts-ts eject",
     "storybook": "start-storybook -p 6006",

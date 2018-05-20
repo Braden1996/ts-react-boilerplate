@@ -1,5 +1,5 @@
 import * as React from 'react';
-import FaCalendarO from "react-icons/lib/fa/calendar-o";
+import FaCalendarO from 'react-icons/lib/fa/calendar-o';
 import MdDashboard from 'react-icons/lib/md/dashboard';
 import { matchPath } from 'react-router';
 import { NavLinkProps } from 'react-router-dom';

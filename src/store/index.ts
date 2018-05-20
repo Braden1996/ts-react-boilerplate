@@ -17,13 +17,13 @@ function configureStore(initialState?: IRootState) {
   ];
 
   const enhancer = composeEnhancers(
-    applyMiddleware(...middlewares)
+    applyMiddleware(...middlewares),
   );
 
   return createStore(
     rootReducer,
     initialState!,
-    enhancer
+    enhancer,
   );
 }
 

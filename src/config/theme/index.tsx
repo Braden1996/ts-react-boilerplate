@@ -10,7 +10,7 @@ export const theme  = {
     medium: gridMultiple(3),
     large: gridMultiple(5),
     huge: gridMultiple(8),
-    borderRadius: gridMultiple(1)
+    borderRadius: gridMultiple(1),
   },
   colors: {
     white: '#ffffff',
@@ -26,7 +26,7 @@ export const theme  = {
     blue: '#2196f3',
     brand: {
       facebook: '#3b5998',
-      twitter: '#00aced'
+      twitter: '#00aced',
     },
     brown: '#795548',
     carrot: '#e67e22',
@@ -61,7 +61,7 @@ export const theme  = {
     teal: '#009688',
     turqoise: '#1abc9c',
     yellow: '#ffeb3b',
-  }
+  },
 };
 
 export default styled as ThemedReactEmotionInterface<typeof theme>;

@@ -5,4 +5,3 @@ export default styled.footer`
   height: 128px;
   background-color: ${p => p.theme.colors.wetAsphalt};
 `;
-

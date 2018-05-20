@@ -1,3 +1,5 @@
+/* tslint:disable:interface-name no-namespace ban-types */
+
 declare namespace Deep {
   export type Readonly<T> =
     T extends ReadonlyArray<infer U> ? DeepReadonlyArray<U> :

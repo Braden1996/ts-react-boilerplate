@@ -3,7 +3,6 @@ import * as React from 'react';
 
 import styled from '@theme';
 
-
 interface IGridProps {
   showSidebar?: boolean;
 }
@@ -44,7 +43,7 @@ const WrapperGrid = styled<IGridProps, 'div'>('div')`
 `;
 
 WrapperGrid.defaultProps = {
-  showSidebar: false
+  showSidebar: false,
 };
 
 interface IProps {
@@ -56,7 +55,7 @@ interface IProps {
   children: JSX.Element;
 }
 
-const Wrapper: React.SFC<IProps> = props => {
+const Wrapper: React.SFC<IProps> = (props) => {
   const sortedParts = [];
   sortedParts[PARTS.LOGO - 1] = props.logo;
   sortedParts[PARTS.HEADER - 1] = props.header;

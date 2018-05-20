@@ -1,5 +1,5 @@
 // @ts-ignore
-import styles from "@sambego/storybook-styles";
+import styles from '@sambego/storybook-styles';
 import { storiesOf } from '@storybook/react';
 import * as React from 'react';
 
@@ -23,7 +23,7 @@ const Footer = styled.div`
 `;
 
 const componentProps = {
-  logo: <Logo />, header: <Header />, sidebar: <Sidebar />, footer: <Footer />
+  logo: <Logo />, header: <Header />, sidebar: <Sidebar />, footer: <Footer />,
 };
 
 const Children =  styled.div`background-color: seagreen;`;

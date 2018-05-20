@@ -3,8 +3,7 @@ import * as ReactDOM from 'react-dom';
 
 import { theme } from '@theme';
 
-import store from '../store';
-import { history } from '../store';
+import store, { history } from '../store';
 import App from './App';
 
 describe('App', () => {
@@ -14,7 +13,7 @@ describe('App', () => {
       store={store}
       history={history}
       theme={theme}
-    />, div);
+    />,             div);
     ReactDOM.unmountComponentAtNode(div);
   });
 });

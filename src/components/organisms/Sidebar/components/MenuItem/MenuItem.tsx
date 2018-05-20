@@ -5,7 +5,7 @@ import withProps from 'recompose/withProps';
 import styled from '@theme';
 
 export default withProps({
-	activeClassName: 'active',
+  activeClassName: 'active',
 } as NavLinkProps)(styled(NavLink)`
   height: ${p => p.theme.dimensions.mult(13)}px;
   padding-left: ${p => p.theme.dimensions.large}px;

@@ -9,7 +9,7 @@ import App from './App';
 import injectGlobalStyle from './globalStyle';
 import registerServiceWorker from './registerServiceWorker';
 
-const props = {store, history, theme};
+const props = { store, history, theme };
 const render = (MyApp: JSX.Element) =>
   ReactDOM.render(MyApp, document.getElementById('root') as HTMLElement);
 

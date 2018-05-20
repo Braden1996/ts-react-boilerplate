@@ -8,7 +8,7 @@ interface IProps {
 }
 
 const Button = styled<IProps, 'button'>('button')`
-  height: ${p => {
+  height: ${(p) => {
     switch (p.size) {
       case 'small':
         return 24;

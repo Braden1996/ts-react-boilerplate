@@ -2,7 +2,7 @@ import { injectGlobal } from 'emotion';
 // @ts-ignore
 import emotionNormalize from 'emotion-normalize';
 
-export default function() {
+export default function injectGlobalStyle() {
   // tslint:disable no-unused-expression
   injectGlobal`
     ${emotionNormalize}
