@@ -1,6 +1,7 @@
 import { ThemeProvider } from 'emotion-theming';
 import { History } from 'history';
 import * as React from 'react';
+import { Helmet } from 'react-helmet';
 import { Provider } from 'react-redux';
 import { ConnectedRouter } from 'react-router-redux';
 import { Store } from 'redux';
@@ -22,7 +23,13 @@ export default class App extends React.Component<IProps, {}> {
       <Provider store={store}>
         <ThemeProvider theme={theme}>
           <ConnectedRouter history={history}>
-            <Router />
+            <>
+              <Helmet>
+                <meta charSet="utf-8" />
+                <title>Fitness App</title>
+              </Helmet>
+              <Router />
+            </>
           </ConnectedRouter>
         </ThemeProvider>
       </Provider>
