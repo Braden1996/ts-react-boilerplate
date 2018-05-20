@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { MdMenu } from 'react-icons/lib/md';
+import MdMenu from 'react-icons/lib/md/menu';
 
 import { IconButton } from './components';
 

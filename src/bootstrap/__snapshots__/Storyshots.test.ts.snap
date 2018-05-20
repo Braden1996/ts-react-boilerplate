@@ -1223,17 +1223,6 @@ exports[`Storyshots templates/GenericPage basic GenericPage 1`] = `
   background-color: #34495e;
 }
 
-.emotion-5 {
-  width: 100%;
-  background-color: #ffffff;
-  border-bottom: 1px solid #bdc3c7;
-}
-
-.emotion-5 > .emotion-3 {
-  width: 72px;
-  height: 72px;
-}
-
 .emotion-7 {
   padding-left: 20px;
   color: rgba(255,255,255,0.2);
@@ -1310,6 +1299,17 @@ exports[`Storyshots templates/GenericPage basic GenericPage 1`] = `
 
 .emotion-0 {
   background-color: #34495e;
+}
+
+.emotion-5 {
+  width: 100%;
+  background-color: #ffffff;
+  border-bottom: 1px solid #bdc3c7;
+}
+
+.emotion-5 > .emotion-3 {
+  width: 72px;
+  height: 72px;
 }
 
 .emotion-14 {

@@ -40,8 +40,9 @@ function injectAwesomeTypeScriptLoader(config, env) {
 
 module.exports = (config, env) => {
   config.resolve = config.resolve || {};
-  config.resolve.plugins = [new TsConfigPathsPlugin()]
-    .concat(config.resolve.plugins || []);
+  config.resolve.plugins = (config.resolve.plugins || []).concat([
+    new TsConfigPathsPlugin()
+  ]);
 
   return injectAwesomeTypeScriptLoader(config, env);
 }

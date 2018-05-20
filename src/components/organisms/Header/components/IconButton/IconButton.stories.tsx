@@ -1,7 +1,7 @@
 import { action } from '@storybook/addon-actions';
 import { storiesOf } from '@storybook/react';
 import * as React from 'react';
-import { MdDashboard } from 'react-icons/lib/md';
+import MdDashboard from 'react-icons/lib/md/dashboard';
 
 import styled from '@theme';
 

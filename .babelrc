@@ -2,7 +2,9 @@
   "presets": ["react-app"],
   "env": {
     "production": {
-      "plugins": [["emotion", { "hoist": true }]]
+      "plugins": [
+        ["emotion", { "hoist": true }]
+      ]
     },
     "development": {
       "plugins": [
