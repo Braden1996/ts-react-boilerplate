@@ -1,7 +1,9 @@
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+const Dashboard = require('webpack-dashboard')
+const DashboardPlugin = require('webpack-dashboard/plugin');
 const jestAliases = require('./internal/utils/jestAliases.js');
 const patchWebpack = require('./internal/utils/patchWebpack.js');
 const tsconfig = require('./tsconfig.json');
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = {
   jest: config => ({
@@ -38,8 +40,14 @@ module.exports = {
           statsFilename:
             `${(env === 'production' ? '..' : '.')}/analysis/${env}/stats.json`
         })
-      ])
+      ]);
+    } else if (env === 'development') {
+      const dashboard = new Dashboard();
+      config.plugins = (config.plugins || []).concat([
+        new DashboardPlugin()
+      ]);
     }
+
     return config;
   }
 }

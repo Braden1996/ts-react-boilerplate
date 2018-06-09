@@ -27,7 +27,7 @@
     "utility-types": "^2.0.0"
   },
   "scripts": {
-    "start": "react-app-rewired start --scripts-version react-scripts-ts",
+    "start": "webpack-dashboard -m -c blue -- react-app-rewired start --scripts-version react-scripts-ts",
     "build": "react-app-rewired build --scripts-version react-scripts-ts",
     "pretest": "tslint --project '.'",
     "test": "react-app-rewired test --scripts-version react-scripts-ts --env=jsdom",
@@ -79,7 +79,8 @@
     "storybook-addon-jsx": "^5.3.0",
     "storybook-react-router": "^1.0.1",
     "typescript": "^2.8.1",
-    "webpack-bundle-analyzer": "^2.12.0"
+    "webpack-bundle-analyzer": "^2.12.0",
+    "webpack-dashboard": "^2.0.0"
   },
   "jest": {
     "setupTestFrameworkScriptFile": "<rootDir>/internal/setupTests.js"
