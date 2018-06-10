@@ -1,2 +1,1 @@
-import GenericPageContent from './GenericPageContent';
-export default GenericPageContent;
+export { default } from './GenericPageContent';

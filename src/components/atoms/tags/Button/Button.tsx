@@ -7,7 +7,7 @@ interface IProps {
   size?: 'small' | 'medium' | 'large';
 }
 
-const Button = styled<IProps, 'button'>('button')`
+const Button = styled.button<IProps>`
   height: ${(p) => {
     switch (p.size) {
       case 'small':

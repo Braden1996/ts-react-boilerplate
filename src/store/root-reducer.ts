@@ -1,18 +1,16 @@
-import { routerReducer as router, RouterState } from 'react-router-redux';
+import { connectRouter } from 'connected-react-router';
 import { combineReducers } from 'redux';
+import { StateType } from 'typesafe-actions';
 
-import counters, { State as CountersState } from './count/reducer';
+import counters from './count/reducer';
+import history from './history';
 
-// tslint:disable no-empty-interface
-interface IStoreEnhancerState {}
+const rootReducer = connectRouter(history)(
+  combineReducers({
+    counters,
+  }),
+);
 
-export interface IRootState extends IStoreEnhancerState {
-  router: RouterState;
-  counters: CountersState;
-}
+export default rootReducer;
 
-import { RootAction } from './root-action';
-export const rootReducer = combineReducers<IRootState, RootAction>({
-  counters,
-  router,
-});
+export type RootState = StateType<typeof rootReducer>;

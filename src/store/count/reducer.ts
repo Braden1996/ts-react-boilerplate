@@ -1,10 +1,9 @@
 import { combineReducers } from 'redux';
-import { getReturnOfExpression, getType } from 'typesafe-actions';
+import { ActionType, getType } from 'typesafe-actions';
 
 import * as actions from './actions';
 
-const returnsOfActions = Object.values(actions).map(getReturnOfExpression);
-type Action = typeof returnsOfActions[number];
+export type Action = ActionType<typeof actions>;
 
 interface IState {
   value: number[];

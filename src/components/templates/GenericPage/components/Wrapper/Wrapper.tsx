@@ -11,7 +11,7 @@ enum PARTS { LOGO = 1, HEADER, SIDEBAR, FOOTER }
 
 const partsLength = Object.keys(PARTS).length / 2;
 
-const WrapperGrid = styled<IGridProps, 'div'>('div')`
+const WrapperGrid = styled.div<IGridProps>`
   display: grid;
   grid-template-columns: max-content 1fr;
   grid-template-rows: max-content 1fr max-content;

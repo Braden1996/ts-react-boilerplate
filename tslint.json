@@ -18,6 +18,7 @@
     "object-literal-sort-keys": false,
     "semicolon": [true, "always"],
     "import-name": false,
-    "variable-name": [true, "ban-keywords", "check-format", "allow-pascal-case"]
+    "variable-name": [true, "ban-keywords", "check-format", "allow-pascal-case"],
+    "align": [false, "arguments"]
   }
 }

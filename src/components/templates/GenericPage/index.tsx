@@ -1,2 +1,1 @@
-import GenericPage from './GenericPage';
-export default GenericPage;
+export { default } from './GenericPage';

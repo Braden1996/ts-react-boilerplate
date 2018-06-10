@@ -4,12 +4,13 @@ import { AppContainer } from 'react-hot-loader';
 
 import { theme } from '@theme';
 
-import store, { history }  from '../store';
+import configureStore  from '../store';
+import history  from '../store/history';
 import App from './App';
 import injectGlobalStyle from './globalStyle';
 import registerServiceWorker from './registerServiceWorker';
 
-const props = { store, history, theme };
+const props = { history, theme, store: configureStore() };
 const render = (MyApp: JSX.Element) =>
   ReactDOM.render(MyApp, document.getElementById('root') as HTMLElement);
 
@@ -22,7 +23,7 @@ function bootHot() {
 
   module.hot!.accept('../store/root-reducer', () => {
     const newRootReducer = require('../store/root-reducer').default;
-    store.replaceReducer(newRootReducer);
+    props.store.replaceReducer(newRootReducer);
   });
 }
 

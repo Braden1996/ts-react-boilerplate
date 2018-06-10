@@ -1,5 +1,5 @@
 const path = require('path');
-const { TsConfigPathsPlugin } = require('awesome-typescript-loader');
+const TsConfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 
 const loaderNameMatches = (rule, loader_name) =>
   rule && rule.loader && typeof rule.loader === 'string' &&

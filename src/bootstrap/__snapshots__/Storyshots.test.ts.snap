@@ -428,7 +428,7 @@ exports[`Storyshots organisms/Sidebar basic Sidebar 1`] = `
       <ul>
         <li>
           <a
-            aria-current="true"
+            aria-current="page"
             className="emotion-2 emotion-3 active"
             href="/dashboard"
             onClick={[Function]}
@@ -458,7 +458,7 @@ exports[`Storyshots organisms/Sidebar basic Sidebar 1`] = `
         </li>
         <li>
           <a
-            aria-current={false}
+            aria-current={null}
             className="emotion-2 emotion-3"
             href="/calendar"
             onClick={[Function]}
@@ -599,7 +599,7 @@ exports[`Storyshots organisms/Sidebar/MenuItem basic MenuItem 1`] = `
       }
     >
       <a
-        aria-current={false}
+        aria-current={null}
         className="emotion-0 emotion-1"
         href="/hello-world"
         onClick={[Function]}
@@ -682,7 +682,7 @@ exports[`Storyshots organisms/Sidebar/MenuItem basic svg MenuItem 1`] = `
       }
     >
       <a
-        aria-current={false}
+        aria-current={null}
         className="emotion-0 emotion-1"
         href="/hello-world"
         onClick={[Function]}
@@ -785,7 +785,7 @@ exports[`Storyshots organisms/Sidebar/MenuItem multiple MenuItem 1`] = `
     >
       <ul>
         <a
-          aria-current={false}
+          aria-current={null}
           className="emotion-0 emotion-1"
           href="/Apple"
           onClick={[Function]}
@@ -795,7 +795,7 @@ exports[`Storyshots organisms/Sidebar/MenuItem multiple MenuItem 1`] = `
           !
         </a>
         <a
-          aria-current={false}
+          aria-current={null}
           className="emotion-0 emotion-1"
           href="/Banana"
           onClick={[Function]}
@@ -805,7 +805,7 @@ exports[`Storyshots organisms/Sidebar/MenuItem multiple MenuItem 1`] = `
           !
         </a>
         <a
-          aria-current={false}
+          aria-current={null}
           className="emotion-0 emotion-1"
           href="/Cherry"
           onClick={[Function]}
@@ -1411,7 +1411,7 @@ exports[`Storyshots templates/GenericPage basic GenericPage 1`] = `
           <ul>
             <li>
               <a
-                aria-current="true"
+                aria-current="page"
                 className="emotion-9 emotion-10 active"
                 href="/dashboard"
                 onClick={[Function]}
@@ -1441,7 +1441,7 @@ exports[`Storyshots templates/GenericPage basic GenericPage 1`] = `
             </li>
             <li>
               <a
-                aria-current={false}
+                aria-current={null}
                 className="emotion-9 emotion-10"
                 href="/calendar"
                 onClick={[Function]}

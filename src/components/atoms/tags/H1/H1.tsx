@@ -6,7 +6,7 @@ interface IProps {
   glow?: boolean;
 }
 
-export default styled<IProps, 'h1'>('h1')`
+export default styled.h1<IProps>`
   color: ${p =>
     p.glow ? p.theme.colors.blue : p.theme.colors.red};
   ${p => p.glow && css`

@@ -1,18 +1,8 @@
-import { LocationChangeAction, RouterAction } from 'react-router-redux';
-import { getReturnOfExpression } from 'utility-types';
+import { routerActions } from 'connected-react-router';
+import { $Values } from 'utility-types';
 
-import * as countersActions from './count/actions';
-
-export const actions = {
-  counters: countersActions,
-};
-
-const returnsOfActions = Object.values(countersActions)
-  .map(getReturnOfExpression);
-
-type AppAction = typeof returnsOfActions[number];
-type ReactRouterAction = RouterAction | LocationChangeAction;
+import { Action as CountAction } from './count/reducer';
 
 export type RootAction =
-  | AppAction
-  | ReactRouterAction;
+  | CountAction
+  | $Values<typeof routerActions>;

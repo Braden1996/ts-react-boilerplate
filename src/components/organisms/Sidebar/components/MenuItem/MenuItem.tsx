@@ -6,7 +6,7 @@ import styled from '@theme';
 
 export default withProps({
   activeClassName: 'active',
-} as NavLinkProps)(styled(NavLink)`
+} as NavLinkProps)(styled(NavLink)<NavLinkProps>`
   height: ${p => p.theme.dimensions.mult(13)}px;
   padding-left: ${p => p.theme.dimensions.large}px;
 
@@ -36,4 +36,4 @@ export default withProps({
       margin-right: ${p => p.theme.dimensions.medium}px;
     }
   }
-`) as any;
+`) as typeof NavLink;
