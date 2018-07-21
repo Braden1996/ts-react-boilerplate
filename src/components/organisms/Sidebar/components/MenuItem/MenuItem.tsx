@@ -28,7 +28,8 @@ export default withProps({
     border-left: 2px solid ${p => p.theme.colors.amber};
   }
 
-  &, & > a {
+  &,
+  & > a {
     display: flex;
     align-items: center;
 

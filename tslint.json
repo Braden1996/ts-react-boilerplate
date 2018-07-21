@@ -2,23 +2,27 @@
   "extends": [
     "tslint:recommended",
     "tslint-react",
+    "tslint-config-airbnb",
     "tslint-config-prettier",
-    "tslint-config-airbnb"
+    "tslint-plugin-prettier"
   ],
   "linterOptions": {
     "exclude": [
-      "storybook/**/*.js",
-      "config/**/*.js",
-      "internal/**/*.js",
       "node_modules/**/*.ts"
     ]
   },
   "rules": {
+    "prettier": true,
     "jsx-boolean-value": false,
+    "jsx-alignment": false,
+    "jsx-curly-spacing": false,
+    "jsx-equals-spacing": false,
+    "jsx-no-multiline-js": false,
+    "jsx-wrap-multiline": false,
     "object-literal-sort-keys": false,
-    "semicolon": [true, "always"],
     "import-name": false,
     "variable-name": [true, "ban-keywords", "check-format", "allow-pascal-case"],
-    "align": [false, "arguments"]
+    "align": [false, "arguments"],
+    "semicolon": false
   }
 }

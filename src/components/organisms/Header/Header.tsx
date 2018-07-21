@@ -23,7 +23,9 @@ interface IProps {
 
 const Header: React.SFC<IProps> = props => (
   <Container className={props.className}>
-    <IconButton onClick={props.menuOnClick}><MdMenu size={32} /></IconButton>
+    <IconButton onClick={props.menuOnClick}>
+      <MdMenu size={32} />
+    </IconButton>
   </Container>
 );
 

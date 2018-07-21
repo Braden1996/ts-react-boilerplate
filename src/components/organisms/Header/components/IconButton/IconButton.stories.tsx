@@ -12,9 +12,8 @@ const IconButton = styled(UnstyledIconButton)`
   height: 64px;
 `;
 
-storiesOf('organisms/Header/IconButton', module)
-  .add('basic IconButton', () => (
-    <IconButton onClick={action('Toggle sidebar')}>
-      <MdDashboard size={32} />
-    </IconButton>
-  ));
+storiesOf('organisms/Header/IconButton', module).add('basic IconButton', () => (
+  <IconButton onClick={action('Toggle sidebar')}>
+    <MdDashboard size={32} />
+  </IconButton>
+));

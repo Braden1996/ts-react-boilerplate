@@ -10,16 +10,8 @@ const DashboardRouter: React.SFC = () => {
     <GenericPage>
       <GenericPageContent>
         <Switch>
-          <Route
-            exact
-            path="/(dashboard)?"
-            component={Home}
-          />
-          <Route
-            exact
-            path="/calendar"
-            component={Calendar}
-          />
+          <Route exact path="/(dashboard)?" component={Home} />
+          <Route exact path="/calendar" component={Calendar} />
         </Switch>
       </GenericPageContent>
     </GenericPage>

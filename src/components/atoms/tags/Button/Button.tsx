@@ -8,7 +8,7 @@ interface IProps {
 }
 
 const Button = styled.button<IProps>`
-  height: ${(p) => {
+  height: ${p => {
     switch (p.size) {
       case 'small':
         return 24;
@@ -20,10 +20,12 @@ const Button = styled.button<IProps>`
   }}px;
   background-color: ${p => p.theme.colors.paper};
 
-  ${p => p.disabled && css`
-    pointer-events: none;
-    background-color: ${p.theme.colors.offWhite};
-  `}
+  ${p =>
+    p.disabled &&
+    css`
+      pointer-events: none;
+      background-color: ${p.theme.colors.offWhite};
+    `};
 `;
 
 Button.defaultProps = {

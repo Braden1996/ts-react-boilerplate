@@ -7,9 +7,10 @@ interface IProps {
 }
 
 export default styled.h1<IProps>`
-  color: ${p =>
-    p.glow ? p.theme.colors.blue : p.theme.colors.red};
-  ${p => p.glow && css`
-    text-shadow: 0 0 10px ${p.theme.colors.pink};
-  `}
+  color: ${p => (p.glow ? p.theme.colors.blue : p.theme.colors.red)};
+  ${p =>
+    p.glow &&
+    css`
+      text-shadow: 0 0 10px ${p.theme.colors.pink};
+    `};
 `;

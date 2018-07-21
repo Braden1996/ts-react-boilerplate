@@ -10,5 +10,4 @@ const Sidebar = styled(UnstyledSidebar)`
   height: 100vh;
 `;
 
-storiesOf('organisms/Sidebar', module)
-  .add('basic Sidebar', () => <Sidebar />);
+storiesOf('organisms/Sidebar', module).add('basic Sidebar', () => <Sidebar />);

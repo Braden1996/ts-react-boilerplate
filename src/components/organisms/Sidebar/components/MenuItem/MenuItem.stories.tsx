@@ -12,12 +12,16 @@ storiesOf('organisms/Sidebar/MenuItem', module)
     <MenuItem to="/hello-world">Hello world!</MenuItem>
   ))
   .add('basic svg MenuItem', () => (
-    <MenuItem to="/hello-world"><MdCake />Hello world!</MenuItem>
+    <MenuItem to="/hello-world">
+      <MdCake />Hello world!
+    </MenuItem>
   ))
   .add('multiple MenuItem', () => (
     <ul>
       {['Apple', 'Banana', 'Cherry'].map(option => (
-        <MenuItem key={option} to={`/${option}`}>{option}!</MenuItem>
+        <MenuItem key={option} to={`/${option}`}>
+          {option}!
+        </MenuItem>
       ))}
     </ul>
   ));

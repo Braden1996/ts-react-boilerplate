@@ -5,11 +5,12 @@ import * as React from 'react';
 
 import Button from './Button';
 
-storiesOf('atoms/tags/Button', module)
-  .add('basic Button', () => (
-    <Button
-      size={select('Size', ['small', 'medium', 'large'], 'medium') as any}
-      disabled={boolean('Disabled', false)}
-      onClick={action('button-clicked')}
-    >Click me</Button>
-  ));
+storiesOf('atoms/tags/Button', module).add('basic Button', () => (
+  <Button
+    size={select('Size', ['small', 'medium', 'large'], 'medium') as any}
+    disabled={boolean('Disabled', false)}
+    onClick={action('button-clicked')}
+  >
+    Click me
+  </Button>
+));

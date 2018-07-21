@@ -4,8 +4,8 @@ import { AppContainer } from 'react-hot-loader';
 
 import { theme } from '@theme';
 
-import configureStore  from '../store';
-import history  from '../store/history';
+import configureStore from '../store';
+import history from '../store/history';
 import App from './App';
 import injectGlobalStyle from './globalStyle';
 import registerServiceWorker from './registerServiceWorker';
@@ -15,10 +15,18 @@ const render = (MyApp: JSX.Element) =>
   ReactDOM.render(MyApp, document.getElementById('root') as HTMLElement);
 
 function bootHot() {
-  render(<AppContainer><App {...props} /></AppContainer>);
+  render(
+    <AppContainer>
+      <App {...props} />
+    </AppContainer>,
+  );
 
   module.hot!.accept('./App', () => {
-    render(<AppContainer><App {...props} /></AppContainer>);
+    render(
+      <AppContainer>
+        <App {...props} />
+      </AppContainer>,
+    );
   });
 
   module.hot!.accept('../store/root-reducer', () => {

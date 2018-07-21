@@ -10,5 +10,4 @@ const Logo = styled(UnstyledLogo)`
   height: 73px;
 `;
 
-storiesOf('organisms/Logo', module)
-  .add('basic Logo', () => <Logo />);
+storiesOf('organisms/Logo', module).add('basic Logo', () => <Logo />);

@@ -7,7 +7,12 @@ interface IGridProps {
   showSidebar?: boolean;
 }
 
-enum PARTS { LOGO = 1, HEADER, SIDEBAR, FOOTER }
+enum PARTS {
+  LOGO = 1,
+  HEADER,
+  SIDEBAR,
+  FOOTER,
+}
 
 const partsLength = Object.keys(PARTS).length / 2;
 
@@ -16,30 +21,41 @@ const WrapperGrid = styled.div<IGridProps>`
   grid-template-columns: max-content 1fr;
   grid-template-rows: max-content 1fr max-content;
   grid-template-areas:
-    "logo header"
-    "sidebar content"
-    "footer content";
+    'logo header'
+    'sidebar content'
+    'footer content';
   min-height: 100vh;
   max-height: 100vh;
 
-  > *:nth-child(n + ${partsLength + 1}) { grid-area: content; }
+  > *:nth-child(n + ${partsLength + 1}) {
+    grid-area: content;
+  }
   > *:nth-child(${PARTS.LOGO}) {
     grid-area: logo;
     width: 220px;
   }
-  > *:nth-child(${PARTS.HEADER}) { grid-area: header; }
-  > *:nth-child(${PARTS.SIDEBAR}) { grid-area: sidebar; }
-  > *:nth-child(${PARTS.FOOTER}) { grid-area: footer; }
+  > *:nth-child(${PARTS.HEADER}) {
+    grid-area: header;
+  }
+  > *:nth-child(${PARTS.SIDEBAR}) {
+    grid-area: sidebar;
+  }
+  > *:nth-child(${PARTS.FOOTER}) {
+    grid-area: footer;
+  }
 
-  ${p => !p.showSidebar && css`
-    grid-template-areas:
-      "logo header"
-      "content content"
-      "content content";
-    > *:nth-child(${PARTS.SIDEBAR}), > *:nth-child(${PARTS.FOOTER}) {
-      display: none;
-    }
-  `}
+  ${p =>
+    !p.showSidebar &&
+    css`
+      grid-template-areas:
+        'logo header'
+        'content content'
+        'content content';
+      > *:nth-child(${PARTS.SIDEBAR}),
+      > *:nth-child(${PARTS.FOOTER}) {
+        display: none;
+      }
+    `};
 `;
 
 WrapperGrid.defaultProps = {
@@ -55,7 +71,7 @@ interface IProps {
   children: JSX.Element;
 }
 
-const Wrapper: React.SFC<IProps> = (props) => {
+const Wrapper: React.SFC<IProps> = props => {
   const sortedParts = [];
   sortedParts[PARTS.LOGO - 1] = props.logo;
   sortedParts[PARTS.HEADER - 1] = props.header;

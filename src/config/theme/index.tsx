@@ -2,7 +2,7 @@ import styled, { ThemedReactEmotionInterface } from 'react-emotion';
 
 const gridMultiple = (multiplier: number) => multiplier * 4;
 
-export const theme  = {
+export const theme = {
   dimensions: {
     mult: gridMultiple,
     tiny: gridMultiple(1),

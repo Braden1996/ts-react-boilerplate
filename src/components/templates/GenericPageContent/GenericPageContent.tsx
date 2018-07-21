@@ -26,9 +26,7 @@ interface IProps {
 
 const GenericTemplate: React.SFC<IProps> = props => (
   <Wrapper>
-    <Container>
-      {props.children}
-    </Container>
+    <Container>{props.children}</Container>
   </Wrapper>
 );
 

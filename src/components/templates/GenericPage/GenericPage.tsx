@@ -36,7 +36,7 @@ class GenericPage extends React.PureComponent<IProps, IState> {
   }
 
   private toggleSidebar = () =>
-    this.setState({ showSidebar: !this.state.showSidebar })
+    this.setState({ showSidebar: !this.state.showSidebar });
 }
 
 export default GenericPage;

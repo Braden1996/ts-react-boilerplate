@@ -16,22 +16,33 @@ const Header = styled.div`
   width: 485px;
   background-color: royalblue;
 `;
-const Sidebar = styled.div`background-color: yellow;`;
+const Sidebar = styled.div`
+  background-color: yellow;
+`;
 const Footer = styled.div`
   height: 50px;
   background-color: rebeccapurple;
 `;
 
 const componentProps = {
-  logo: <Logo />, header: <Header />, sidebar: <Sidebar />, footer: <Footer />,
+  logo: <Logo />,
+  header: <Header />,
+  sidebar: <Sidebar />,
+  footer: <Footer />,
 };
 
-const Children =  styled.div`background-color: seagreen;`;
+const Children = styled.div`
+  background-color: seagreen;
+`;
 
 storiesOf('templates/GenericPage/Wrapper', module)
   .add('basic Wrapper with Sidebar', () => (
-    <Wrapper {...componentProps} showSidebar><Children/></Wrapper>
+    <Wrapper {...componentProps} showSidebar>
+      <Children />
+    </Wrapper>
   ))
   .add('basic Wrapper without Sidebar', () => (
-    <Wrapper {...componentProps}><Children /></Wrapper>
+    <Wrapper {...componentProps}>
+      <Children />
+    </Wrapper>
   ));

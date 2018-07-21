@@ -8,8 +8,4 @@ import Header from './Header';
 
 storiesOf('organisms/Header', module)
   .addDecorator(styles({ width: '100vw' }))
-  .add('basic Header', () => (
-    <Header
-      menuOnClick={action('Toggle sidebar')}
-    />
-  ));
+  .add('basic Header', () => <Header menuOnClick={action('Toggle sidebar')} />);

@@ -3,7 +3,7 @@ import * as React from 'react';
 
 import MenuHeader from './MenuHeader';
 
-storiesOf('organisms/Sidebar/MenuHeader', module)
-  .add('basic MenuHeader', () => (
-    <MenuHeader>Menu</MenuHeader>
-  ));
+storiesOf('organisms/Sidebar/MenuHeader', module).add(
+  'basic MenuHeader',
+  () => <MenuHeader>Menu</MenuHeader>,
+);
